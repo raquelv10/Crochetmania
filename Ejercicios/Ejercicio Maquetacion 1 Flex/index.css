@@ -1,0 +1,137 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+}
+
+/* Footer abajo */
+body, html {
+    height: 100%;
+}
+
+/* Footer abajo */
+body {
+    display:flex;
+    flex-direction:column;
+}
+
+header {
+    height: 100px;
+    background-color: whitesmoke;
+    border-bottom: 3px solid rgb(47, 133, 247);
+    display:flex;
+    justify-content: space-between;
+    padding:20px;
+    align-items: center;
+}
+
+header ul {
+    display:flex;
+}
+
+header li {
+    list-style: none;
+}
+
+header a {
+    margin: 20px;
+    border: 2px solid rgb(47, 133, 247);
+    border-radius:3px;
+    padding: 10px 30px;
+    text-decoration:none;
+    color: rgb(47, 133, 247);
+    box-shadow: 1px 2px 9px grey;
+}
+
+header a:hover {
+    box-shadow: 2px 6px 9px grey;
+}
+header nav {
+    margin-right: 30px;
+}
+
+/* Footer abajo */
+main {
+    display:flex;
+    flex-grow: 1;
+    background-color: whitesmoke;
+}
+
+section {
+    width: 70%;
+    padding:20px;
+    background-color: whitesmoke;
+    display:flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+section article {
+    width: 250px;
+    height: 230px;
+    background-color: white;
+    box-shadow: 2px 4px 9px grey;
+    margin:10px;
+}
+
+section article:hover {
+    box-shadow: 4px 8px 9px grey;
+}
+
+section img {
+    width: 100%;
+}
+
+section p {
+    margin:20px;
+}
+
+.fecha {
+    font-size: 10px;
+    text-align: right;
+    margin-top: 30px;
+}
+
+aside {
+    width: 30%;
+    padding:20px;
+}
+
+aside h3 {
+    padding-left:50px;
+}
+
+aside ul {
+    padding:10px;
+}
+aside li {
+    list-style: none;
+    display:flex;
+    align-items: center;
+    padding: 10px 0;
+    border-bottom: 1px dotted grey;
+    font-style: italic;
+    line-height: 2;
+}
+
+aside li:hover {
+    cursor:pointer;
+    border-bottom: 1px solid grey;
+}
+
+aside img {
+    width:10%;
+    margin-right: 10px;
+    border-radius:2px;
+}
+
+footer {
+    background-color: black;
+    color:white;
+    text-align: center;
+    padding:20px;
+}
+
+footer h1:hover {
+    color: darksalmon;
+
+}

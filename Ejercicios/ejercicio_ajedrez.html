@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio ajedrez</title>
+    <style> /* Esto es CSS */ /* Los atributos son más generales. Si hay un grupo de etiquetas con los mismos atributos
+    se puede poner aquí y así el resto del código queda más sencillo. Aquí lo podemos ver en las celdas tr, td y th que todas tienen el mismo tamaño. de esta manera no es necesario escribirlo todas las veces.*/
+        body {
+            background-color: orange;
+            text-align: center;
+        }
+
+        table {
+            width: 650px;
+            margin: auto;
+            border-spacing: 0px;
+            font-weight: bold;
+        }
+
+        tr, td, th {
+            width: 80px;
+            height: 80px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <table>
+        <thead> <!-- Contrincante 1 - Blancas  -->   <!-- thead es la línea de encabezado de columna -->
+            <th colspan="8" style="background-color:white; font-size: 25px;">Pedro</th>
+        </thead>
+
+        <tbody> <!-- Es el cuerpo de la tabla -->
+            <tr>
+                <!-- Blancas -->
+                <td style="background-color:white; color:black">Torre</td>
+                <td style="background-color: black; color:white">Caballo</td>
+                <td style="background-color:white; color:black">Alfil</td>
+                <td style="background-color: black; color:white">Rey</td>
+                <td style="background-color:white; color:black">Reina</td>
+                <td style="background-color: black; color:white">Alfil</td>
+                <td style="background-color:white; color:black">Caballo</td>
+                <td style="background-color: black; color:white">Torre</td>
+            </tr>
+            <tr>
+                <!-- Blancas peones -->
+                <td style="background-color:black; color:white">Peón</td>
+                <td style="background-color: white; color:black">Peón</td>
+                <td style="background-color:black; color:white">Peón</td>
+                <td style="background-color: white; color:black">Peón</td>
+                <td style="background-color:black; color:white">Peón</td>
+                <td style="background-color: white; color:black">Peón</td>
+                <td style="background-color:black; color:white">Peón</td>
+                <td style="background-color: white; color:black">Peón</td>
+            </tr>
+
+            <tr>
+                <!-- Celdas vacías -->
+                <td style="background-color:white"></td>
+                <td style="background-color: black"></td>
+                <td style="background-color:white"></td>
+                <td style="background-color: black"></td>
+                <td style="background-color:white"></td>
+                <td style="background-color: black"></td>
+                <td style="background-color:white"></td>
+                <td style="background-color: black"></td>
+            </tr>
+            <tr>
+                <!-- Celdas vacías -->
+                <td style="background-color:black"></td>
+                <td style="background-color: white"></td>
+                <td style="background-color:black"></td>
+                <td style="background-color: white"></td>
+                <td style="background-color:black"></td>
+                <td style="background-color: white"></td>
+                <td style="background-color:black"></td>
+                <td style="background-color: white"></td>
+            </tr>
+
+            <tr>
+                <!-- Celdas vacías -->
+                <td style="background-color:white"></td>
+                <td style="background-color: black"></td>
+                <td style="background-color:white"></td>
+                <td style="background-color: black"></td>
+                <td style="background-color:white"></td>
+                <td style="background-color: black"></td>
+                <td style="background-color:white"></td>
+                <td style="background-color: black"></td>
+            </tr>
+
+            <tr>
+                <!-- Celdas vacías -->
+                <td style="background-color:black"></td>
+                <td style="background-color: white"></td>
+                <td style="background-color:black"></td>
+                <td style="background-color: white"></td>
+                <td style="background-color:black"></td>
+                <td style="background-color: white"></td>
+                <td style="background-color:black"></td>
+                <td style="background-color: white"></td>
+            </tr>
+
+            <tr>
+                <!-- Negras peones -->
+                <td style="background-color:white; color:black">Peón</td>
+                <td style="background-color: black; color:white">Peón</td>
+                <td style="background-color:white; color:black">Peón</td>
+                <td style="background-color: black; color:white">Peón</td>
+                <td style="background-color:white; color:black">Peón</td>
+                <td style="background-color: black; color:white">Peón</td>
+                <td style="background-color:white; color:black">Peón</td>
+                <td style="background-color: black; color:white">Peón</td>
+
+            <tr>
+                <!-- Negras  -->
+                <td style="background-color:black; color:white">Torre</td>
+                <td style="background-color: white; color:black">Caballo</td>
+                <td style="background-color:black; color:white">Alfil</td>
+                <td style="background-color: white; color:black">Rey</td>
+                <td style="background-color:black; color:white">Reina</td>
+                <td style="background-color: white; color:black">Alfil</td>
+                <td style="background-color:black; color:white">Caballo</td>
+                <td style="background-color: white; color:black">Torre</td>
+            </tr>
+
+        </tbody>
+
+        <tfoot> <!-- Contrincante 2 - Negras  --> <!-- tfoot es el pie de la tabla -->
+            <tr>
+                <td colspan="8" style="background-color:black; color:white; font-size: 25px;">Paco</td>
+            </tr>
+        </tfoot>
+
+    </table>
+</body>
+
+</html>

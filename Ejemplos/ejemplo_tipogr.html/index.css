@@ -1,0 +1,40 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100&family=Otomanopee+One&family=Tourney:wght@100&family=Uchen&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@font-face {
+    font-family: 'Roboto', sans-serif;
+    src: url("Roboto-Bold.ttf");
+}
+
+body {
+    font-family: 'Pacifico', cursive;
+    font-size: 30px;
+}
+#parrafo1 {
+    font-family: 'Uchen', serif; 
+    font-weight: bold;
+}
+
+#parrafo2 {
+    font-family: 'Lato', sans-serif; 
+    font-size:28px;
+}
+    
+#parrafo3 {
+     font-family: 'Otomanopee One', sans-serif; 
+}
+
+#parrafo4 {
+    font-family: 'Tourney', cursive; 
+    font-size: 60px;
+}
+
+#parrafo5 { /* esta tiene la @font-face Algunas veces no funciona bien. Casi mejor utilizar @import */
+    font-family: 'Roboto', sans-serif; 
+    font-size: 30px;
+}
+
+#parrafo6 {
+    font-family: 'Pacifico', cursive;
+    font-size: 30px;
+
+}

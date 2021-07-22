@@ -1,0 +1,43 @@
+#sec_opc {
+    width: 75%;
+    height: 800px;
+    background-color: lightgray;
+    position: absolute;
+    left: 188px;
+    top: 630px;
+    /* float:left; */
+}
+
+#sec_opc a {
+    text-decoration: none;
+    color: black;
+    padding-right: 10px;
+    
+}
+
+#sec_opc a:hover {
+    text-decoration: underline;
+}
+
+#nav_iz {
+    width: 220px;
+    float:left;
+    margin-bottom:0;
+}
+
+#nav_de {
+    width: 155px;
+    float:right;
+    margin-bottom:0;
+}
+
+.articulos {
+    
+    width: 30%;
+    height: 300px;
+    margin:10px;
+    margin-top:30px;
+    background-color: white;
+    margin-right: 15px;
+    float:left;
+  

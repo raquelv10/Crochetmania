@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio Estructura</title>
+    <style>
+
+        /* La cabecera contiene un logo y un menú. También un borde inferior azul  */
+        header {
+            
+            height: 80px;
+            border-bottom: 3px solid rgb(47, 133, 247);
+        }
+
+        /* Es el logo que va dentro de la cabecera  */
+        #logo {
+            width: 48px;
+            height: 48px;
+            margin: 10px;
+        }
+
+        /*  Este es el menú de navegación. Contiene 3 enlaces. */
+        nav {
+            width: 400px;
+            height: 30px;
+            float: right;
+            padding:25px;
+            padding-bottom:0;
+            
+        }
+
+        /*  Enlaces del menú. Tienen un borde que hace que parezcan botones  */
+        a {
+            border: 2px solid rgb(47, 133, 247);
+            color:rgba(0, 0, 0, 0.747);
+            border-radius:3px;
+            border-style: solid;
+            padding:3px 5px;  /* primer valor= arriba y abajo. segundo valor= izquierda y derecha */
+            margin-right:40px;
+            text-decoration:none;
+            box-shadow: 1px 2px 2px rgb(49 48 48 / 23%);
+        }
+
+        /* Contiene un section y un aside */
+        main {
+            background-color:rgb(233, 231, 231);
+            height: 530px;
+            margin-top: 1px;
+        }
+
+        /*  Corresponde a la parte principal de la página. Contiene 6 article */
+        section {
+            width: 82%;
+            float:left;
+
+        }
+
+        /* Corresponde a las 6 cajas del section. Contiene la imagen y dos tipos de texto  */
+        .caja{
+            width: 30%;
+            height: 240px;
+            float:left;
+            margin:10px;
+            margin-top:10px;
+            background-color: white;
+            box-shadow: 3px 4px 8px rgb(49 48 48 / 63%);
+        }
+
+        /*  Corresponde a las imágenes dentro de las cajas */
+        .imagen {
+            width: 100%;
+               
+        }
+
+        /*  Formato del primer párrafo de las cajas */
+        p {
+            margin: 10px;
+        }
+
+        /*  Formato del segundo párrafo de las cajas */
+        .fecha {
+            font-size: 10px;
+            text-align: right;
+
+        }     
+
+        /*  Contiene una lista */
+        aside {
+            width: 15%;
+            float:left;
+
+        }
+
+        /*  Corresponde al título de la lista */
+        h4 {
+            
+            text-align:center;
+            margin: 15px -33px 15px 0;
+        }
+
+        /*  Corresponde a la lista del aside. Incluye una imagen en cada li */
+        li {
+            border-bottom: 1px dotted grey;
+            line-height: 3;
+            list-style: none;
+
+        }
+
+        /* Corresponde a las imágenes de la lista. */
+        .imagen2 {
+            width: 20%;
+            margin-right: 8px;
+            border-radius: 3px;
+        }
+
+        .post {
+            display:inline;
+            font-size: 1em;
+            font-style: italic;
+        }
+        /* Corresponde al texto del footer */
+        h5 {
+            margin-top: 0;
+        }
+
+        /* Corresponde al pie de página. Contiene un texto. */
+        footer {
+            width: 100%;
+            height: 80px;
+            background-color: black;
+            color: white;
+            text-align: center;
+            line-height: 6;
+            clear:both;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Cabecera -->
+    <header>
+        
+        <img id="logo" src="img/logo.png" alt="logo">        
+        
+        <!-- Menú de navegación -->
+        <nav>
+            <a  href="home.html">Home</a>
+            <a  href="proyectos.html">Proyectos</a>
+            <a  href="blog.html">Blog</a>
+        </nav>        
+
+    </header>
+
+    <main>
+
+        <!-- Seis cajas con imágen y texto -->
+        <section>
+
+                <article class="caja">
+                    <img class="imagen" src="img/cielo.jpg" alt="Foto">
+                    <p>¡Comer bien!</p>
+                    <p class="fecha">09/07/2021</p>
+
+                </article>
+                
+                <article class="caja">
+                    <img class="imagen" src="img/cielo.jpg" alt="Foto">
+                    <p>¡Comer bien!</p>
+                    <p class="fecha">09/07/2021</p>
+                </article>
+                
+                <article class="caja">
+                    <img class="imagen" src="img/cielo.jpg" alt="Foto">
+                    <p>¡Comer bien!</p>
+                    <p class="fecha">09/07/2021</p>
+                </article>
+                
+                <article class="caja">
+                    <img class="imagen" src="img/cielo.jpg" alt="Foto">
+                    <p>¡Comer bien!</p>
+                    <p class="fecha">09/07/2021</p>
+                </article>
+                
+                <article class="caja">
+                    <img class="imagen" src="img/cielo.jpg" alt="Foto">
+                    <p>¡Comer bien!</p>
+                    <p class="fecha">09/07/2021</p>
+                </article>
+                
+                <article class="caja">
+                    <img class="imagen" src="img/cielo.jpg" alt="Foto">
+                    <p>¡Comer bien!</p>
+                    <p class="fecha">09/07/2021</p>
+                </article>
+
+        </section>
+
+        <!-- Lista con imágenes -->
+        <aside>
+            
+                <h4>Tal vez te interese</h4>
+
+                <ul>
+
+                    <li>
+                        <img class="imagen2" src="img/cielo.jpg" alt="foto">  
+                        <h5 class="post">Post 1</h5>
+                    </li>
+                    <li>
+                        <img class="imagen2" src="img/cielo.jpg" alt="foto">
+                        <h5 class="post">Post 1</h5>
+                    </li>
+                    <li>
+                        <img class="imagen2" src="img/cielo.jpg" alt="foto">
+                        <h5 class="post">Post 1</h5>
+                    </li>
+                    <li>
+                        <img class="imagen2" src="img/cielo.jpg" alt="foto">
+                        <h5 class="post">Post 1</h5>
+                    </li>
+                    <li>
+                        <img class="imagen2" src="img/cielo.jpg" alt="foto">
+                        <h5 class="post">Post 1</h5>
+                    </li>
+                    <li>
+                        <img class="imagen2" src="img/cielo.jpg" alt="foto">
+                        <h5 class="post">Post 1</h5>
+                    </li>
+                
+                </ul>
+
+        </aside>
+
+    </main>
+    
+    <!-- Pie de página -->
+    <footer>
+        <h5>Aquí más datos</h5>
+    </footer>
+
+</body>
+</html>

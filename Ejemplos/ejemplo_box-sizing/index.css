@@ -1,0 +1,19 @@
+
+/* Las dos cajas tienen las mismas características pero gracias al box-sizing no tienen el mismo tamaño. */
+#div1 {
+    width: 500px;
+    border: 10px solid red;
+    padding: 50px;
+    margin:auto;
+    text-align: center;
+
+}
+
+#div2 {
+    width: 500px;
+    border: 10px solid red;
+    padding: 50px;
+    margin:auto;
+    text-align: center;
+    box-sizing: border-box;
+}

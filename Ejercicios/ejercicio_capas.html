@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Capas FLOAT 2</title>
+    <style>
+        header {
+            background-color: turquoise;
+            height: 40px;
+            padding: 40px;
+        }
+
+        /* div correspondiente al logo dentro de header */
+        #logo {
+            background-color: magenta;
+            width: 35px;
+            height: 35px;
+        } 
+        main {
+            border: 1px solid black;
+            height: 300px;
+        }
+        aside {
+            background-color: rgba(64, 224, 208, 0.562);
+            width: 30%;
+            height: 300px;
+            float: left;
+            
+        }
+        section {
+            background-color: peachpuff;
+            width: 70%;
+            height: 300px;
+            float:left;
+        }
+        /* Clase correspondiente a las cajas dentro de Section */
+
+        .cajas {
+            width: 120px; 
+            height:120px; 
+            margin-left: 120px;
+            margin-top: 20px;
+            background-color: rgb(98, 10, 240);
+            float:left
+
+        }
+        footer {
+            background-color: violet;
+            height: 50px;
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div id="logo"></div>
+    </header>
+
+    <main>
+        <aside>
+
+        </aside>
+
+        <section>
+        
+            <!-- Creamos 6 cajas. Las codificaremos como class ya que todas van a tener los mismos atributos  -->
+
+            <div class="cajas"></div>
+            <div class="cajas"></div>
+            <div class="cajas"></div>
+            <div class="cajas"></div>
+            <div class="cajas"></div>
+            <div class="cajas"></div>
+        
+        </section>
+
+    </main>
+
+    <footer>
+
+
+    </footer>
+
+
+
+
+</body>
+</html>

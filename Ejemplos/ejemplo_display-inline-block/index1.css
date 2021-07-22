@@ -1,0 +1,40 @@
+* {
+    box-sizing: border-box; /* no suma padding ni margin al total */
+   
+}
+
+header {
+    height: 100px;
+    background-color: cyan;
+    padding: 24px;
+}
+
+nav {
+    width: 25%;
+    margin: auto;
+    background-color: hotpink;
+    border: 2px solid magenta;
+    border-radius: 5px;
+}
+
+/* Clase de los enlaces del nav. forman parte de una lista ul */
+
+.enlaces {
+    padding: 10px;
+    display: inline;
+}
+
+/* Links "a" dentro de la lista del nav */
+
+.enlaces a {
+    background-color: rgb(57, 252, 193);
+    border: 2px solid blue;
+    border-radius: 10px;
+    text-decoration: none;
+    padding: 10px;
+    margin-right: 5px;
+}
+
+.enlaces a:hover {
+    box-shadow: 1px 4px 8px grey;
+}

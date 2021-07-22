@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+    margin:0;
+}
+
+/* footer abajo */
+body, html {
+    height: 100%;
+}
+
+/* footer abajo */
+body {
+    display:flex;
+    flex-direction:column;
+}
+
+header {
+    height: 100px;
+    background-color: tomato;
+    
+}

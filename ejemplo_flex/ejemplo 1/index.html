@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo 1 flex</title>
+    <link rel="stylesheet" href="index.css">
+
+</head>
+<body>
+    <div class="flex-contenedor flex-contenedor1">
+        <div>Caja 1</div>
+        <div>Caja 2</div>
+        <div>Caja 3</div>
+        <div>Caja 4</div>
+    </div>
+    
+    <hr>
+
+    <div class="flex-contenedor flex-contenedor2">
+        <div>Caja 1</div>
+        <div>Caja 2</div>
+        <div>Caja 3</div>
+        <div>Caja 4</div>
+        <div>Caja 5</div>
+        <div>Caja 6</div>
+        <div>Caja 7</div>
+        <div>Caja 8</div>
+    </div>
+
+    <hr>
+
+    <div class="flex-contenedor flex-contenedor3">
+        <div>Caja 1</div>
+        <div>Caja 2</div>
+        <div>Caja 3</div>
+
+    </div>
+
+    <hr>
+
+    <div class="flex-contenedor flex-contenedor4">
+        <div>Caja 1</div>
+        <div>Caja 2</div>
+        <div>Caja 3</div>
+        <div>Caja 4</div>
+        <div>Caja 5</div>
+        <div>Caja 6</div>
+        <div>Caja 7</div>
+        <div>Caja 8</div>
+    </div>
+
+    <hr>
+
+    <div class="flex-contenedor flex-contenedor5">
+        <!-- flex-shrink  Indica cuánto de sí mismo se hará pequeño cuando no haya espacio suficiente -->
+        <!-- flex-basis Es como si fuera el width: ; -->
+        <!-- flex-grow Especifica el factor de crecimiento hasta el final Lo usaremos para que el footer esté al final el valor va de 0 a 1 0.3 0.6 ...-->
+        <div style="order:1; background-color:red; flex-basis: 300px; ">Caja 1</div>
+        <div style="order:2; background-color:cyan; flex-basis: 300px;">Caja 2</div>
+        <div style="order:3; background-color: coral;flex-basis: 300px; flex-shrink: 10; flex-grow: 1;">Caja 3</div>
+        
+    </div>
+
+    
+</body>
+</html>

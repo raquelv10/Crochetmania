@@ -1,0 +1,142 @@
+/* -------Fuente Montserrat Regular 400 */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin:0;
+}
+
+html, body {
+    height: 100%;
+}
+
+/* fondo negro con padding lateral */
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: black;
+    padding: 2px 60px;
+}
+
+/* ----------------------------Header----------------------------- */
+header {
+    background-color: white;
+    height: 90px;
+    margin: 8px 0;
+    padding: 10px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header img {
+    width: 40px;
+}
+
+header h3 {
+    font-style: italic;
+    font-size: 20px;
+}
+
+/* --------------------------------Main------------------------------- */
+
+main {
+    flex-grow: 1;
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+/* ---------------------------------Nav-------------------------------- */
+
+nav {
+    width: 100%;
+    height: 45px;
+    background-color: yellow;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 3px 0 10px 0;
+    
+    flex-wrap: wrap;
+}
+
+nav ul {
+    display:flex;
+    padding:0;
+}
+
+nav li {
+    list-style: none;
+}
+
+nav a {
+    text-decoration:none;
+    border: 1px solid black;
+    border-radius: 3px;
+    margin: 0 10px;
+    padding: 5px 10px;
+    background-color: black;
+    color:white;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    box-shadow: 2px 3px 8px black;
+    background-color: red;
+}
+
+/* ------------------------------Section------------------------------ */
+
+section {
+    width: 75%;
+    /* height: 800px; */
+    background-color: rgba(253, 88, 28, 0.801);
+    display:flex;
+    flex-grow: 1;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 35px 10px;
+}
+
+section img {
+    margin:30px 15px;
+    width: 105px;
+}
+
+/* --------------------------------Aside------------------------------- */
+
+aside {
+    width:18%;
+    /* height: 800px; */
+    background-color: green;
+    padding:15px;
+    margin-bottom: 10px;
+    flex-wrap: wrap;
+}
+
+aside h5 {
+    margin-bottom:10px;
+}
+
+aside ul {
+    padding-inline-start: 30px;
+}
+aside li {
+    list-style:decimal;
+    font-size: 12px;
+}
+
+/* --------------------------------Footer------------------------------ */
+
+footer {
+    background-color: purple;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    padding:10px;
+}
+

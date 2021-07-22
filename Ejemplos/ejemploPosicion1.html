@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo Capas Solapadas</title>
+    <style>
+        nav {
+            
+            background-color: slateblue;
+            height: 90px;
+            color:wheat;
+            font-size: 20px;
+            text-align: center;
+            position: fixed;  
+            top: 0;
+            width: 100%;
+        }
+
+        #caja1 {
+            background-color: tomato;
+            width: 100%;
+            color: thistle;
+            position: fixed;
+            height: 75px;
+            text-align: center;
+            top: 90px;
+        }
+
+        #caja2 {
+            background-color: teal;
+            height: 90px;
+            position: fixed;
+            width: 100%;
+            color: white;
+            text-align: center;
+            top:165px;
+        }
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        
+        <h1>Menú</h1>
+
+    </nav>
+    
+    <div id="caja1"> <h1>Caja1</h1></div>
+
+    <div id="caja2"> <h1>Caja2</h1></div>
+</body>
+</html>

@@ -1,0 +1,72 @@
+/* selector universal: selecciona
+todo los elementos */
+* {
+    /* quita el margen por defecto del navegador */
+    margin: 0; 
+}
+
+body {
+    padding: 10px;
+}
+
+.caja {
+    width: 40%;
+    height: 300px;
+    margin-bottom: 10px;
+}
+
+#rojo {
+    background-color: red;
+    /* oculta la caja, pero sigue ocupando espacio  */
+    visibility: hidden;
+}
+
+#azul {
+    background-image: url(imagen.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+#azul div {
+    height: 100%;
+    background-color: rgba(0, 0, 0, .5);
+    position: relative;
+    /* deja de visualizar el elemento y sin ocupar espacio */
+    display: none;
+}
+
+#azul div p {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+/* pseudoclase : hover  */
+/* cuando el cursor pase por encima de la caja con 
+id=azul, el div que contiene pasa de display none
+a display block */
+
+#azul:hover div{
+    display: block;
+    /* añade el cursor en forma de mano */ 
+    cursor: pointer;
+}
+
+a {
+    color:crimson;
+    background-color: whitesmoke;
+    border: 1px solid crimson;
+    padding: 3px 25px;
+    border-radius: 25px;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: crimson;
+    color: white;
+}

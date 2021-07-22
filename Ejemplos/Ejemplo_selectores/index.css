@@ -1,0 +1,71 @@
+/* selector por clase */
+.parrafos {
+    color:blue;
+}
+
+/* selector por id */
+
+#text1 {
+    color:red;
+}
+
+/* selector por agrupación */
+
+div, h1 {
+    font-size: 40px;
+}
+
+/* anidamiento */
+
+div p {
+    color:green;
+}
+
+/* pseudoclase */
+
+h3:hover {
+    color:violet;
+}
+
+/* selector de descendientes */
+
+p > span {
+    color:orange;
+}
+
+/* selector adyacente */
+
+h2 {
+    color:green;
+}
+
+h1 + h2 {   /* A+B  selecciona todos los B que siguen a A */
+    color:red;
+}
+
+/* selector por atributo */
+
+/* input {
+    border: 1px solid red;
+} */
+
+/* input[type=text] {  /* todos los atributos con [valor] 
+    border: 1px solid red;
+} */
+
+/* pseudoclase focus */
+
+input[type=text]:focus {  /* todos los atributos con el foco */
+    border: 2px solid red;
+}
+
+/* insertar contenido después */
+div p::after {
+    content:" -Soy un párrafo";
+}
+
+/* childs */
+
+.childs p:nth-child(3) {
+    background-color: turquoise;
+}
