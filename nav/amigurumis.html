@@ -16,6 +16,7 @@
     <script src="../js/scroll.js"></script>
     <script src="../js/aside2.js"></script>
     <script src="../js/buscador.js"></script>
+    <script src="../js/colapsar.js"></script>
     <link rel="stylesheet" href="../css/reponsive.css">
     <link rel="stylesheet" href="../css/pre-loader.css">
     <link rel="stylesheet" href="../css/main.css">
@@ -23,14 +24,14 @@
 </head>
 
 <body>
-    <!-- div de carga del PRE-LOADER -->   
+    <!-- div de carga del PRE-LOADER -->
     <div class="pre-loader"></div>
- 
+
     <!-- DIV CONTENEDOR DE TODO -->
     <div class="container">
         <!-- ASIDE -->
         <div class="contenedor-aside"></div>
-        
+
         <!-- NAV SUPERIOR -->
         <div class="col-m-12 contenedor_nav_cuenta">
             <nav class="cuenta">
@@ -38,14 +39,18 @@
                 <div id="contenedor-iconSearch"><img id="icon-search" src="../img/lupa.svg" alt="buscar"></div>
                 <div id="burguer"><img src="../img/burguer.png" alt="menu"></div>
                 <!-- ENLACES NAV SUPERIOR -->
-                <ul>
-                    <li><a href="../nav/micuenta.html">Mi Cuenta</a></li>
-                    <li><a href="../nav/carrito.html">Carrito</a></li>
-                    <li><a href="../nav/tienda.html">Tienda</a></li>
-                    <li><a href="../nav/contacto.html">Contacto</a></li>
-                </ul>
+                <div class="content_ul">
+                    <ul class="cuenta-ul">
+                        <li><a href="../nav/micuenta.html">Mi Cuenta</a></li>
+                        <li><a href="../nav/carrito.html">Carrito</a></li>
+                        <li><a href="../nav/tienda.html">Tienda</a></li>
+                        <li><a href="../nav/contacto.html">Contacto</a></li>
+                    </ul>
+                </div>
             </nav>
+            <div class="fondo_nav_superior"></div>
         </div>
+        <div class="expandir"><img src="../img/flecha_abajo.svg" alt="expandir"></div>
 
         <!-- Código de cookies -->
         <div class="cookiesms" id="cookie1">
@@ -59,70 +64,71 @@
             <div></div>
         </header>
 
+        <!-- BUSCADOR DE GOOGLE    https://programmablesearchengine.google.com/controlpanel/all -->
+        <div id="contenedor-barra">
+            <script async src="https://cse.google.com/cse.js?cx=06fe56aee442a7a6e"></script>
+            <div class="gcse-search"></div>
+        </div>
+
+        <div id="fondo-busqueda"></div>
+        <!-- FIN BUSCADOR  -->
+
         <!-- NAVBAR -->
         <div class="col-m-12 contenedor_nav">
-            
-            <nav class="navbar col-m-8">
-                  <!-- BUSCADOR DE GOOGLE    https://programmablesearchengine.google.com/controlpanel/all -->
-              <div id="contenedor-barra">
-                <script async src="https://cse.google.com/cse.js?cx=06fe56aee442a7a6e"></script>
-                <div class="gcse-search"></div>
-            </div>
-
-            <div id="fondo-busqueda"></div>
-            <!-- FIN BUSCADOR  -->
-
             <div id="colapsar"><img src="../img/flecha_abajo.svg" alt="expandir"></div>
-            <div id="expandir">
+            <nav class="navbar col-m-8">
+                <div id="menu_principal"> 
 
-                <!-- COMPONENTES DEL NAVBAR -->
-                <ul>
+                    <!-- COMPONENTES DEL NAVBAR -->
+                    <ul class="navbar-ul">
 
-                    <li><a href="../index.html" id="logo"><img src="../img/logo-mini.png" alt="logo"></a></li>
-                    <!--  Amigurumis  -->
-                    <li id="amigurumi" class="dropdown"><a href="../nav/amigurumis.html">Amigurumis</a>
-                        <ul class="amigurumis dropdown-content">
-                            <li><a href="../nav/amigurumis/animales.html">Animales</a></li>
-                            <li><a href="../nav/amigurumis/personajes.html">Personajes</a></li>
-                            <li><a href="../nav/amigurumis/para-bebes.html">Para bebés</a></li>
-                        </ul>
+                        <li><a href="../index.html" id="logo"><img src="../img/logo-mini.png" alt="logo"></a></li>
+                        <!--  Amigurumis  -->
+                        <li id="amigurumi" class="dropdown"><a href="../nav/amigurumis.html">Amigurumis</a>
+                            <ul class="amigurumis dropdown-content">
+                                <li><a href="../nav/amigurumis/animales.html">Animales</a></li>
+                                <li><a href="../nav/amigurumis/personajes.html">Personajes</a></li>
+                                <li><a href="../nav/amigurumis/para-bebes.html">Para bebés</a></li>
+                            </ul>
 
-                    </li>
+                        </li>
 
-                    <!-- Moda -->
-                    <li id="menu_moda" class="dropdown"><a href="../nav/moda.html">Moda</a>
-                        <ul class="moda dropdown-content">
-                            <li><a href="../nav/moda/hombre.html">Hombre</a></li>
-                            <li><a href="../nav/moda/mujer.html">Mujer</a></li>
-                            <li><a href="../nav/moda/ninyos.html">Niños</a></li>
-                            <li><a href="../nav/moda/bebes.html">Bebés</a></li>
-                            <li><a href="../nav/moda/disfraces.html">Disfraces</a></li>
-                        </ul>
-                    </li>
+                        <!-- Moda -->
+                        <li id="menu_moda" class="dropdown"><a href="../nav/moda.html">Moda</a>
+                            <ul class="moda dropdown-content">
+                                <li><a href="../nav/moda/hombre.html">Hombre</a></li>
+                                <li><a href="../nav/moda/mujer.html">Mujer</a></li>
+                                <li><a href="../nav/moda/ninyos.html">Niños</a></li>
+                                <li><a href="../nav/moda/bebes.html">Bebés</a></li>
+                                <li><a href="../nav/moda/disfraces.html">Disfraces</a></li>
+                            </ul>
+                        </li>
 
-                    <!-- Complementos -->
-                    <li id="menu_comp" class="dropdown"><a href="../nav/complementos.html">Complementos</a>
-                        <ul class="complementos dropdown-content">
-                            <li><a href="../nav/complementos/buf-chal.html">Bufandas/Chales</a></li>
-                            <li><a href="../nav/complementos/bolsos-mochi.html">Bolsos/Mochilas</a></li>
-                            <li><a href="../nav/complementos/bisuteria.html">Bisutería</a></li>
-                            <li><a href="../nav/complementos/comp-hogar.html">Complementos hogar</a></li>
-                        </ul>
-                    </li>
+                        <!-- Complementos -->
+                        <li id="menu_comp" class="dropdown"><a href="../nav/complementos.html">Complementos</a>
+                            <ul class="complementos dropdown-content">
+                                <li><a href="../nav/complementos/buf-chal.html">Bufandas/Chales</a></li>
+                                <li><a href="../nav/complementos/bolsos-mochi.html">Bolsos/Mochilas</a></li>
+                                <li><a href="../nav/complementos/bisuteria.html">Bisutería</a></li>
+                                <li><a href="../nav/complementos/comp-hogar.html">Complementos hogar</a></li>
+                            </ul>
+                        </li>
 
-                    <!--  Tutoriales  -->
-                    <li id="menu_tuto" class="dropdown"><a href="../nav/tutoriales.html">Tutoriales</a>
-                        <ul class="tutoriales dropdown-content">
-                            <li><a href="../nav/tutoriales/simbolos.html">Símbolos</a></li>
-                            <li><a href="../nav/tutoriales/puntos-basicos.html">Puntos básicos</a></li>
-                            <li><a href="../nav/tutoriales/puntos-fantasia.html">Puntos fantasía</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="../nav/blog.html">Blog</a></li>
-                    <li><a href="../nav/foro.html">Foro</a></li>
+                        <!--  Tutoriales  -->
+                        <li id="menu_tuto" class="dropdown"><a href="../nav/tutoriales.html">Tutoriales</a>
+                            <ul class="tutoriales dropdown-content">
+                                <li><a href="../nav/tutoriales/simbolos.html">Símbolos</a></li>
+                                <li><a href="../nav/tutoriales/puntos-basicos.html">Puntos básicos</a></li>
+                                <li><a href="../nav/tutoriales/puntos-fantasia.html">Puntos fantasía</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../nav/blog.html">Blog</a></li>
+                        <li><a href="../nav/foro.html">Foro</a></li>
 
-                </ul>
+                    </ul>
+                </div>    
             </nav>
+            <div class="fondo_nav_principal"></div>
         </div> <!-- Fin del navbar -->
 
         <!-- ********************************************************************************* -->
@@ -139,18 +145,19 @@
                     </div>
                     <div class="slider dia">
                         <a href="../nav/amigurumis/animales.html#tortuga"><img src="../img/tortuga.png"></a>
-                        
+
                     </div>
                     <div class="slider dia">
                         <a href="../nav/amigurumis/animales.html#batman"><img src="../img/batman.jpg"></a>
-                        
+
                     </div>
                     <div class="slider dia">
-                        <a href="../nav/amigurumis/animales.html#osito-mordedor"><img src="../img/mordedor-osito.jpg"></a>
-                        
+                        <a href="../nav/amigurumis/animales.html#osito-mordedor"><img
+                                src="../img/mordedor-osito.jpg"></a>
+
                     </div>
 
-                </div>  <!-- Fin slider -->
+                </div> <!-- Fin slider -->
 
                 <div class="separador"></div>
                 <div class="enlaces_ami col-m-12">
@@ -160,13 +167,13 @@
 
                 </div>
 
-                
+
             </section>
 
 
         </main>
 
-       <!-- FOOTER -->
+        <!-- FOOTER -->
         <footer>
             <div class="footer-content col-m-8">
 

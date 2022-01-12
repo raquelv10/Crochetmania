@@ -157,13 +157,18 @@
 
   #priv{
    float:initial!important;
-   margin:0 24%;
+   margin:0 15%;
   }
   .copyright-info {
-    float:initial!important;
-    margin:0px 38%;
+    position:absolute;
+    right: -82px;
+    margin-top: 15px;
+    
+    
   }
-  
+  header div {
+    width: 58%!important;
+  }
 
 }
 
@@ -246,12 +251,19 @@
   #logo img {
     margin-right: 0!important;
   }
+  #menu_principal{
+    height: 0;
+  }
+  .navbar {
+    position:absolute;
+    top:-200px;
+  }
   .navbar-ul.responsive {
     display:flex!important;
     flex-direction: column!important;
     position: relative;
     left: 3vw;
-    top: 269px;
+    top: 219px;
     width: 250px;
     height: 500px;
     background-color: white!important;

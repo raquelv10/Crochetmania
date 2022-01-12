@@ -2,13 +2,12 @@ document.addEventListener("DOMContentLoaded",()=>{
    
     /* ****************FUNCIONES NAV SUPERIOR********************** */
 
-    const cuenta_ul = document.querySelector(".cuenta ul");  //navbar superior
+    const cuenta_ul = document.querySelector(".cuenta-ul");  //navbar superior
     const fondo_nav_superior = document.querySelector(".fondo_nav_superior");
     const flecha1 = document.querySelector(".expandir");// icono flecha nav superior
 
     // Función que muestra la caja de búsqueda al clicar en la lupa:
     flecha1.addEventListener("click", () => {
-
 
         cuenta_ul.classList.toggle("responsive");
         if(cuenta_ul.classList.contains("responsive")){
@@ -16,34 +15,16 @@ document.addEventListener("DOMContentLoaded",()=>{
         }else{
             fondo_nav_superior.style.display = "none";
         }     
-
-
-
-
-
-
-        
-        /* if(cuenta_ul.classList.contains("cuenta_vertical")){
-            
-            cuenta_ul.classList.remove("cuenta_vertical");
-            fondo_nav_superior.style.display = "none";
-  
-        }else {
-            
-            cuenta_ul.classList.add("cuenta_vertical");
-            fondo_nav_superior.style.display = "block";
-        } */
      
     })
 
-
     // Función que oculta el menu navbar superior al clicar fuera:
 
-    /* fondo_nav_superior.addEventListener("click",()=>{
-        cuenta_ul.classList.remove("cuenta_vertical");
+    fondo_nav_superior.addEventListener("click",()=>{
+        cuenta_ul.classList.remove("responsive");
         fondo_nav_superior.style.display = "none";
 
-    }) */
+    })
 
 /* ****************FUNCIONES NAV PRINCIPAL********************** */
     //navbar principal
@@ -56,11 +37,20 @@ document.addEventListener("DOMContentLoaded",()=>{
     flecha2.addEventListener("click", () => {
         
         navbar_ul.classList.toggle("responsive");
+
         if(navbar_ul.classList.contains("responsive")){
+            console.log("tic");
             fondo_nav_principal.style.display = "block";
         }else{
+            console.log("tac");
             fondo_nav_principal.style.display = "none";
         }     
+
+    })
+
+    fondo_nav_principal.addEventListener("click",()=>{
+        navbar_ul.classList.remove("responsive");
+        fondo_nav_principal.style.display = "none";
 
     })
 
