@@ -170,7 +170,7 @@
 @media only screen and (max-width: 695px) {
   /* ocultar menu navbar superior y añadir icono expandir */
 
-  .cuenta ul {
+  .cuenta-ul {
     position:absolute;
     left:33%;
     display:none;
@@ -178,6 +178,24 @@
   .expandir, #flecha_abajo {
     display:block!important;
     z-index: 9;
+  }
+  .cuenta-ul.responsive {
+   
+    display:flex!important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+    /* position: absolute; */
+    left: 32vw;
+    top: 38px;
+    width: 250px;
+    height: 300px;
+    background-color: white!important;
+    box-shadow: 2px 2px 8px rgb(187, 186, 186);
+    transition: all 1s;
+    z-index:999991;
+    
   }
   
 }
@@ -225,12 +243,15 @@
     display:none!important;
     
   }
+  #logo img {
+    margin-right: 0!important;
+  }
   .navbar-ul.responsive {
     display:flex!important;
     flex-direction: column!important;
-    position:relative;
-    left:92%;
-    top:267px;
+    position: relative;
+    left: 3vw;
+    top: 269px;
     width: 250px;
     height: 500px;
     background-color: white!important;
