@@ -1,0 +1,791 @@
+/* ESTILOS GENERALES DEL PROYECTO FINAL "CROCHETMANIA" */
+
+/* Paleta de colores de nuestro SITIO */
+
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Poppins:wght@300&display=swap');
+
+:root {
+    --color-secundario: rgb(246, 223, 252);
+    --color-texto: #030303;
+    --color-texto-resaltado: #c558d8;
+    --color-fondo-botones: #d874de;
+    --color-borde-botones: #d894de;
+    --color-borde-botones-hover: #d874de;
+    --color-sombra-botones-hover: #9e49ee;
+    --color-fondo-botones2: #ff6179;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+body {
+    background-image: url(../img/background.jpg);
+    background-position: center;
+    background-size: contain;
+    height: 100%;
+    color: var(--color-texto);
+    z-index: -1;
+    
+}
+
+body, p, h4 {
+    font-family: 'Poppins', sans-serif;
+    color: var(--color-texto);
+}
+
+.parrafo::first-letter {
+    font-family: "Playfair Display";
+    font-weight: 400;
+    float: left;
+    margin: 0px 12px 0 0;
+    font-size: 80px;
+    line-height: 65px;
+    text-align: center;
+}
+
+h2, h3, h1 {
+    font-family: 'Aclonica', sans-serif;
+}
+
+h2 {
+    text-align: center;
+    font-size: 35px;
+    font-weight: 400;
+}
+
+/* *****************ASIDE IZQUIERDO******************** */
+
+/* Corresponde al fondo negro que aparece al abrir el aside */
+.contenedor-aside {
+    width: 100%;
+    height: 100%;
+    background-color: hsla(0, 0%, 0%, 0.4);
+    position:fixed;
+    top:0;
+    left:0;
+    display:none!important;
+    z-index: 20;
+    
+}
+
+/* Corresponde al contenido del Aside Izquierdo que se abre al clicar en el icono burguer */
+.content-aside {
+    padding:20px;
+    background-color: white;
+    width: 276px;
+    height: 100%;
+    position: fixed;
+    top:0;
+    left:-20%;
+    z-index: 21;
+    opacity:0;
+    transition: opacity 1s linear;
+    
+}
+
+.content-aside h2 {
+    margin-top: 20px !important;
+    font-size: 30px;
+    width: auto!important;
+}
+
+.content-aside a {
+    text-decoration: none;
+    color:darkblue;
+    display:block;
+    margin-left: 30px;
+}
+ /* para que se abra hacia la izquierda */
+.izquierda {
+    left:0!important;
+    opacity:1;
+    transition: opacity 1s linear;
+}
+
+/* para que sea visible */
+.visible {
+    display:block!important;
+  
+}
+/* ******************************FIN ASIDE************************** */
+
+
+/* *****************NAVBAR SUPERIOR********************************* */
+
+.contenedor_nav_cuenta {
+    background-color: white;
+    height: 38px;
+}
+
+#burguer {
+    position: absolute;
+    top:8px;
+    left:250px;
+    width: 24px;
+    height: 24px;
+    margin:0!important;
+    z-index: 9999999;    
+}
+#burguer img {
+    margin:0!important;
+}
+
+#burguer:hover {
+    cursor: pointer;
+}
+
+
+.cuenta {
+    height: 38px;
+    width: 100vw;
+}
+
+/* *********nav superior tamaño grande************************************************** */
+.cuenta-ul {
+    float:right;
+    top:-5px; 
+    background-color: white;
+    padding:0;
+    list-style: none;
+    transition: all 1s;
+}
+.cuenta li {
+    display:inline;
+    margin:10px 15px;
+    padding:10px 15px;
+    text-align: center;
+}
+
+.cuenta a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+
+}
+
+.cuenta a:hover {
+    text-decoration: underline;
+    color: var(--color-texto-resaltado);
+}
+/* *************fin********************************************** */
+
+/* **********nav superior tamaño pequeño ************************* */
+
+.fondo_nav_superior {
+    width: 100vw;
+    height: 99vh;
+    position:relative;
+    top: -8px;
+    margin:0;
+    padding:0;
+    background-color: rgba(0, 0, 0, 0.158);
+    display: none; 
+    z-index:99999;
+} 
+
+/* .cuenta_vertical {
+    
+    display:flex!important;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap; 
+    width: 250px;
+    height: 300px;
+    background-color: white!important;
+    box-shadow: 2px 2px 8px rgb(187, 186, 186);
+    transition: all 1s;
+    z-index:999991;
+    
+} */
+
+.expandir { /* div de la imagen flecha */
+    display:none;
+    position:relative;
+    z-index:999992;
+    
+    
+}
+.expandir img {  /* imagen flecha */
+    position:absolute;
+    top:-32px;
+    left:50%;
+    z-index:999992;
+}
+
+/* ******************************FIN NAVBAR SUPERIOR*************************************** */
+
+
+/* ************BUSCADOR***************** */
+
+#icon-search {
+    position: absolute;
+    top:8px!important;
+    width: 24px!important;
+    height: 24px!important;
+    left:290px;
+    cursor: pointer;
+    transition: all 300ms;
+    display:none;
+    margin:0;
+}
+
+#contenedor-barra {
+    position: fixed;
+    top:-115px ;
+    left:0;
+    width: 100vw;
+    background: #fff;
+    z-index: 9; 
+    transition: all 600ms;
+   
+}
+
+#caja-busqueda {
+    position: fixed;
+    top: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 70%;
+    background: #fff;
+    z-index: 8;
+    overflow: hidden;
+    display: none;
+}
+
+#caja-busqueda li a {
+    display: block;
+    width: 70%;
+    color: #777777;
+    padding: 12px 20px;
+}
+
+#caja-busqueda li a:hover {
+    background: #f3f3f3;
+}
+
+#caja-busqueda li a i {
+    margin-right: 10px;
+    color: #777777;
+}
+
+
+#fondo-busqueda {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top:0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.5);
+    z-index: 7;
+    display: none;
+}
+/* ********FIN BUSCADOR************ */
+
+
+/* *********HEADER**************** */
+header {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    width: 100vw;
+    height: 75vh;
+    background-image: url(../img/cabecera.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+}
+
+header div {
+    width: 37%;
+    height: 100%;
+    margin: auto;
+    background-image: url(../img/logo.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+/* **********NAVBAR PRINCIPAL*********** */
+.contenedor_nav {
+    position: relative;
+    background-color: white;
+    width: 100vw;
+    height: 37px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+}
+
+
+/* *************************Menús desplegables del navbar principal****************** */
+
+#logo img {
+    /* margin-top: 7px; */
+    margin-right: 30px;
+    width: 42px;
+    height: 30px;
+}
+
+.navbar {
+    padding: 7px 0;
+    width: auto;
+    max-width: 1200px;
+    position:relative;
+}
+
+.navbar ul {
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
+}
+
+.navbar li {
+    display: inline;
+    position: relative;
+    padding: 10px;
+    margin: 10px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: var(--color-texto);
+    font-weight: bolder;
+    padding: 0 16px !important;
+}
+
+.navbar a:hover {
+    color: var(--color-texto-resaltado);
+}
+
+.dropdown {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+.dropdown-content {
+    position: absolute;
+    left: 16px;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+    display: none !important;
+    transition: display 3s linear;
+    
+}
+
+.dropdown:hover .dropdown-content {
+    display: block !important;
+    
+    
+}
+
+.dropdown-content a {
+    text-decoration: none;
+    color: black;
+    padding: 0px 30px;
+    text-decoration: none;
+    display: block;
+   
+}
+
+/* ******************************Colapsar en responsive********************************************** */
+
+
+.fondo_nav_principal {
+    width: 100vw;
+    height: 50vh;
+    position:absolute;
+    top: 38px;
+    left:0;
+    margin:0;
+    padding:0;
+    background-color: rgba(0, 0, 0, 0.158);
+    display: none; 
+    z-index:99999;
+}
+/* 
+.responsive {
+    
+    flex-direction: column!important;
+    position:relative;
+    left:92%;
+    top:267px;
+    width: 250px;
+    height: 500px;
+    background-color: white!important;
+    box-shadow: 2px 2px 8px rgb(187, 186, 186);
+    transition: all 1s;
+    z-index:999991;
+}
+ */
+.cuenta_vertical2 ul li {
+    margin:10px;
+        
+}
+
+.cuenta_vertical2 .dropdown-content {
+    left:0;
+    top:-20px;
+    z-index:999999991!important;
+} 
+#colapsar {
+    position:absolute;
+    top:10px;
+    left:50%;
+    cursor: pointer;
+    transition: display .5s;
+    
+}
+#colapsar img {
+    display:none;
+}
+
+
+#colapsar:hover+ul {
+    display: grid;
+}
+
+#expandir {
+    height: auto;
+    position: relative;
+    
+}
+.expandir img {
+    cursor:pointer;
+}
+
+
+
+/***********************************Fin Dropdown***************************************************/
+
+
+/* **************MAIN  CONTENIDO PRIMCIPAL************ */
+main {
+    display: flex;
+    justify-content: center;
+    margin: auto;
+    flex-grow: 1;
+    padding: 0 !important;
+
+}
+.construccion {
+    display:flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+section {
+    padding: 40px !important;
+    background-color: white;
+
+}
+
+.separador {
+    height: 40px;
+    border:0;
+}
+
+/* Estilo de los botones */
+.enlaces, .enlaces_ami, .enlaces_comp {
+    padding: 50px 100px;
+    display: flex;
+    justify-content: space-between;
+
+}
+.enlaces_ami {
+    padding: 50px 100px;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.enlaces_ami button {
+    margin:5px;
+}
+button {
+    width: 150px;
+    padding: 10px 20px;
+    background-color: var(--color-fondo-botones);
+    border: none;
+    border: 2px solid var(--color-borde-botones);
+
+    border-radius: 5px;
+}
+.botones_big {
+    width: 150px;
+    padding: 10px 7px;
+    background-color: var(--color-fondo-botones);
+    border: none;
+    border: 2px solid var(--color-borde-botones);
+    border-radius: 5px;
+}
+button:hover {
+    border: 2px solid var(--color-borde-botones-hover);
+    box-shadow: 2px 2px 8px var(--color-sombra-botones-hover);
+
+}
+
+button a {
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1px;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    text-decoration: none;
+
+}
+
+
+/* ************FOOTER************* */
+footer {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin:30px;
+    padding: 0 5%;
+
+}
+
+/**************** Estilos de social media en el footer *********************/
+/***************************************************************************/
+.fa {
+    font-size: 24px;
+}
+
+.social ul {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    padding: 0;
+    margin: 0;
+    transform: translateX(-50%);
+    display: flex;
+}
+
+.social ul li {
+    list-style: none;
+    margin: 0 15px;
+}
+
+.social ul li .fa {
+    font-size: 28px;
+    line-height: 40px;
+    transition: .3s;
+    color: #000;
+}
+
+.social ul li .fa:hover {
+    color: #fff;
+}
+
+.social ul li a {
+    position: relative;
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #fff;
+    text-align: center;
+    transition: .6s;
+    box-shadow: 0 5px 4px rgba(0, 0, 0, .5);
+}
+
+.social ul li a:hover {
+    transform: translate(0, -10%);
+}
+
+.social ul li:nth-child(1) a:hover {
+    background-color: rgba(8, 12, 248, 0.829);
+    color: white;
+}
+
+.social ul li:nth-child(2) a:hover {
+    background-color: #E4405F;
+    color: white;
+}
+
+.social ul li:nth-child(3) a:hover {
+    background-color: #A8005F;
+    color: white;
+}
+
+.social ul li:nth-child(4) a:hover {
+    background-color: #1DA1F3;
+    color: white;
+}
+
+/************************Fin estilos social media***************************/
+/***************************************************************************/
+/***************************************************************************/
+/***************************************************************************/
+
+
+/* ****************POLITICA DE PRIVACIDAD*********************************** */
+
+#priv {  /* Botón Política de Privacidad */
+    float: right;
+    width: 200px;
+    padding: 10px 20px;
+    background-color: var(--color-fondo-botones);
+    border: none;
+    border: 2px solid var(--color-borde-botones);
+    border-radius: 5px;
+}
+
+#priv:hover {
+    border: 2px solid var(--color-borde-botones-hover);
+    box-shadow: 2px 2px 8px var(--color-sombra-botones-hover);
+
+}
+
+/* *************COPYRIGHT************ */
+.copyright-info {
+
+    float: right;
+    padding-right: 40px;
+
+    margin-right: 50px;
+    color: white;
+    font-size: 1em;
+    font-family: 'Lato', sans-serif;
+}
+
+/* *************SCROLL***************** */
+.scroll img {
+    position: fixed !important;
+    bottom: 3% !important;
+    right: 2% !important;
+    display: none;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: var(--color-borde-botones-hover);
+    box-shadow: 0px 9px 8px #333;
+    transition: bottom 1s;
+
+}
+
+
+.scroll img:hover, .scroll {
+    box-shadow: 0px 9px 12px #333;
+    bottom: 4% !important;
+
+}
+
+
+/******************* CSS COOKIES**************** */
+/* CSS para la animación y localización de los DIV de cookies */
+
+@keyframes desaparecer {
+    0% {bottom: 0px;}
+    80% {bottom: 0px;}
+    100% {bottom: -50px;}
+}
+/* Safari and Chrome */
+@-webkit-keyframes desaparecer{
+    0% {bottom: 0px;}
+    80% {bottom: 0px;}
+    100% {bottom: -50px;}
+}
+
+@keyframes aparecer {
+    0% {bottom: -38px;}
+    10% {bottom: 0px;}
+    90% {bottom: 0px;}
+    100% {bottom: -38px;}
+}
+
+/* Safari and Chrome */
+@-webkit-keyframes aparecer {
+    0% {bottom: -38px;}
+    10% {bottom: 0px;}
+    90% {bottom: 0px;}
+    100% {bottom: -38px;}
+}
+
+#cookiesms1:target {
+    display: none;
+}
+
+.cookiesms {
+    width: 100%;
+    height: 43px;
+    margin: 0 auto;
+    padding-left: 1%;
+    padding-top: 5px;
+    font-size: 20px;
+    clear: both;
+    font-weight: strong;
+    color: #333;
+    bottom: -50px;
+    position: fixed;
+    left: 0px;
+    background-color: #FFF;
+    opacity: 0.9;
+    filter: alpha(opacity=70);
+    /* Safari */
+    -webkit-box-shadow: 3px -3px 1px rgba(50, 50, 50, 0.56);
+    -moz-box-shadow: 3px -3px 1px rgba(50, 50, 50, 0.56);
+    box-shadow: 3px -3px 1px rgba(50, 50, 50, 0.56);
+    z-index: 999999999;
+}
+
+.cookiesms:hover {
+    bottom: 0px;
+}
+
+.cookies2 {
+    background-color: #FFF;
+    display: inline;
+    opacity: 0.95;
+    filter: alpha(opacity=95);
+    position: absolute;
+    left: 1%;
+    top: -30px;
+    font-size: 16px;
+    height: 30px;
+    padding-left: 25px;
+    padding-right: 25px;
+    -webkit-border-top-right-radius: 15px;
+    -webkit-border-top-left-radius: 15px;
+    -moz-border-radius-topright: 15px;
+    -moz-border-radius-topleft: 15px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+    -webkit-box-shadow: 3px -3px 1px rgba(50, 50, 50, 0.56);
+    -moz-box-shadow: 3px -3px 1px rgba(50, 50, 50, 0.56);
+    box-shadow: 3px -3px 1px rgba(50, 50, 50, 0.56);
+}
+span {
+    margin-bottom: 20px;
+}
+
+.tabla-cookies{
+    margin:20px;
+}
+
+.tabla-cookies td {
+    padding:30px;
+    margin:20px;
+    border-bottom: 1px solid rgb(141, 138, 138,.5);
+}
+#boton-cookies {
+    width:  100px;
+}
+/*************** Fin del CSS para cookies************* */

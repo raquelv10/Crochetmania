@@ -9,7 +9,21 @@ document.addEventListener("DOMContentLoaded",()=>{
     // Función que muestra la caja de búsqueda al clicar en la lupa:
     flecha1.addEventListener("click", () => {
 
-        if(cuenta_ul.classList.contains("cuenta_vertical")){
+
+        cuenta_ul.classList.toggle("responsive");
+        if(cuenta_ul.classList.contains("responsive")){
+            fondo_nav_superior.style.display = "block";
+        }else{
+            fondo_nav_superior.style.display = "none";
+        }     
+
+
+
+
+
+
+        
+        /* if(cuenta_ul.classList.contains("cuenta_vertical")){
             
             cuenta_ul.classList.remove("cuenta_vertical");
             fondo_nav_superior.style.display = "none";
@@ -18,18 +32,18 @@ document.addEventListener("DOMContentLoaded",()=>{
             
             cuenta_ul.classList.add("cuenta_vertical");
             fondo_nav_superior.style.display = "block";
-        }
+        } */
      
     })
 
 
     // Función que oculta el menu navbar superior al clicar fuera:
-/
-    fondo_nav_superior.addEventListener("click",()=>{
+
+    /* fondo_nav_superior.addEventListener("click",()=>{
         cuenta_ul.classList.remove("cuenta_vertical");
         fondo_nav_superior.style.display = "none";
 
-    })
+    }) */
 
 /* ****************FUNCIONES NAV PRINCIPAL********************** */
     //navbar principal
@@ -41,26 +55,14 @@ document.addEventListener("DOMContentLoaded",()=>{
 
     flecha2.addEventListener("click", () => {
         
-        console.log("entra");
-        if(navbar_ul.className === "navbar-ul"){
-            
-            fondo_nav_principal.style.display = "none";
-            navbar_ul.className += " responsive";
-            
-        }else { 
-            
+        navbar_ul.classList.toggle("responsive");
+        if(navbar_ul.classList.contains("responsive")){
             fondo_nav_principal.style.display = "block";
-            navbar_ul.className = "navbar-ul";
-        } 
-     
+        }else{
+            fondo_nav_principal.style.display = "none";
+        }     
+
     })
-/* 
 
-    content_cuenta1.addEventListener("click",()=>{
-        ul_navbar.classList.remove("cuenta_vertical");
-        ul_navbar.style.top = "-350px";
-        content_cuenta1.style.display = "none";
-
-    }) */ 
 
 })
