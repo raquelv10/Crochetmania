@@ -1,0 +1,76 @@
+header {
+    height: 300px;
+
+}
+
+.slide-container {
+    width: 900px;
+    height: 600px;
+    overflow: hidden;
+    position: relative;
+    top: 0;
+    left: 20%;
+    display: inline-block;
+
+
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+}
+
+
+#img1 {
+    left:200%;
+    animation-name: fotos1;
+    animation-iteration-count:infinite;
+    animation-duration: 3s;
+    animation-timing-function:linear;
+}
+
+#img2 {
+    left:200%;
+    animation-name: fotos2;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-delay: 3s;  
+    animation-timing-function:linear;
+}
+#img3 {
+    left:200%;
+    animation-name: fotos2;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-delay: 6s;
+    animation-timing-function:linear;
+}
+
+#img4 {
+    left:200%;
+    animation-name: fotos2;
+    animation-iteration-count: infinite;
+    animation-duration: 3s;
+    animation-delay: 9s;
+    animation-timing-function:linear;
+}
+
+
+@keyframes fotos1 {
+    0% {left: 200%;}
+    100%{left: -50%;}
+}
+@keyframes fotos2 {
+    0% {left: 200%;}
+    100%{left:-50%;}
+}
+@keyframes fotos3 {
+    0% {left: 200%;}
+    100%{left:-50%;}
+}
+@keyframes fotos4 {
+    0% {left: 2000%;}
+    100%{left:-50%;}
+}

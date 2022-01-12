@@ -1,0 +1,26 @@
+.contacto {
+    display:flex;
+    flex-direction:row ;
+    justify-content: center;
+    align-items: center;
+}
+.contacto img {
+    width: 62%;
+    height: 500px;
+    margin-left:20%;
+}
+
+input, textarea, label {
+    width: 100%;
+    margin:10px;
+}
+
+textarea {
+    resize: none;
+    width: 100%;
+    height: 200px;
+}
+button {
+    color:white;
+    font-weight: bold;
+}

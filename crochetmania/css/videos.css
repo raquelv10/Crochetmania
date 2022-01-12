@@ -1,0 +1,48 @@
+.contenedor_videos {
+
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+img {
+    width: 50%;
+    height: auto;
+}
+
+iframe {
+    width: 80%;
+    height: 350px;
+}
+
+img, iframe {
+    margin:40px;
+}
+
+h4 {
+    font-size: 24px;
+    font-weight: 400;
+    text-align: center;
+}
+h3 {
+    font-weight: 200!important;
+}
+
+#logo img{
+    margin:2px;
+}
+
+.fila {
+    display:flex;
+    justify-content: space-around;
+
+}
+.flex_videos{
+
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}

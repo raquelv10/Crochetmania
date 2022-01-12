@@ -1,0 +1,119 @@
+.content_img {
+    width: 66.6%;
+}
+
+.separador {
+    height: 50px;
+    border-top: 1px solid #E8E8E8;
+    margin-top:45px;
+   
+}
+.final{
+    margin-top:45px;
+}
+
+h2 {
+    padding-top:20px;
+}
+
+
+/* **********************overlay************************* */
+
+
+.content-leer{
+    width:100%;
+	height:300px;
+}
+.content-leer2{
+    width:100%;
+	height:400px;
+}
+
+.content-leer, .content-leer2 {   /* Es el contenedor para hacer el overlay */
+   
+    background-color:rgba(24, 24, 24, 0.315);
+    position:relative;   /* Para que funcione el overlay. El padre relativo y el hijo absoluto */
+	top: -100%;
+	left:0;
+	transition: top 1s;
+
+}
+
+.leer-mas {   /* esta es la clase del enlace "leer-mas" */
+	
+	padding:10px 15px;
+	color:white;
+	position:absolute;  /* Para que funcione el overlay. El padre relativo y el hijo absoluto */
+	top: 50%;
+	left: 50%;
+    transform: translate(-50%,-50%);
+	
+}
+
+.imagen {
+    width: 33.3%;
+    height: 300px;
+}
+
+.imagen, .imagen13 {
+
+    background-position: center;
+    background-repeat:no-repeat;
+    background-size: cover;
+    overflow: hidden;
+    padding:0!important;
+}
+
+.imagen:hover .content-leer, .imagen13:hover .content-leer2 {
+    
+    top: 0;
+	left:0;
+}
+
+/* ********************************FIN overlay*************************************** */
+
+#imagen1 {
+	background-image:url(../img/elefante.jpg);
+}
+#imagen2 {
+	background-image:url(../img/ratones.jpg);
+}
+#imagen3 {
+	background-image:url(../img/conejito.jpg);
+}
+#imagen4 {
+	background-image:url(../img/top.jpg);
+}
+#imagen5 {
+	background-image:url(../img/hombre2-1.jpg);
+	background-position:center!important;
+}
+#imagen6 {
+	background-image:url(../img/nino1.jpg);
+	background-position: top!important;
+}
+#imagen7 {
+	background-image:url(../img/collar1.jpg);
+}
+#imagen8 {
+	background-image:url(../img/pendientes.jpg);
+}
+#imagen9 {
+	background-image:url(../img/bolsa2-1.png);
+}
+#imagen10 {
+	background-image:url(../img/materiales4.jpg);
+}
+#imagen11 {
+	background-image:url(../img/puntos2.jpg);
+}
+#imagen12 {
+	background-image:url(../img/puntos3-1.png);
+}
+#imagen13 {
+	width: 100%;
+    height:400px!important;
+	background-image:url(../img/tutor.jpg);
+    margin-top:20px;
+}
+
