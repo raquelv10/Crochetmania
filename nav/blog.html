@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,14 +17,16 @@
     <link rel="stylesheet" href="../css/main.css">
     <script src="../js/aside2.js"></script>
     <script src="../js/pre-loader.js"></script>
+    <script src="../js/sesion2.js"></script>
     <script src="../js/scroll.js"></script>
     <script src="../js/buscador.js"></script>
+    <script src="../js/colapsar.js"></script>
 </head>
+
 <body>
-     <!-- div de carga del PRE-LOADER -->
+    <!-- div de carga del PRE-LOADER -->
     <div class="pre-loader"></div>
 
-    
     <!-- DIV CONTENEDOR DE TODO -->
     <div class="container">
         <!-- ASIDE -->
@@ -34,17 +37,19 @@
                 <!-- ICONOS DE BURGUER Y BÚSQUEDA -->
                 <div id="contenedor-iconSearch"><img id="icon-search" src="../img/lupa.svg" alt="buscar"></div>
                 <div id="burguer"><img src="../img/burguer.png" alt="menu"></div>
-               
+
                 <!-- ENLACES NAV SUPERIOR -->
-                <ul>
-                    <li><a href="../nav/micuenta.html">Mi Cuenta</a></li>
+                <ul class="cuenta-ul">
+                    <li><a id="micuenta" href="../nav/micuenta.html">Iniciar sesión</a></li>
                     <li><a href="../nav/carrito.html">Carrito</a></li>
                     <li><a href="../nav/tienda.html">Tienda</a></li>
                     <li><a href="../nav/contacto.html">Contacto</a></li>
 
                 </ul>
             </nav>
+            <div class="fondo_nav_superior"></div>
         </div>
+        <div class="expandir"><img src="../img/flecha_abajo.svg" alt="expandir"></div>
 
         <!-- Código de cookies -->
         <div class="cookiesms" id="cookie1">
@@ -57,78 +62,83 @@
         <header>
             <div></div>
         </header>
-        
+
+        <!-- BUSCADOR DE GOOGLE    https://programmablesearchengine.google.com/controlpanel/all -->
+        <div id="contenedor-barra">
+            <script async src="https://cse.google.com/cse.js?cx=06fe56aee442a7a6e"></script>
+            <div class="gcse-search"></div>
+        </div>
+
+        <div id="fondo-busqueda"></div>
+        <!-- FIN BUSCADOR  -->
+
         <!-- NAVBAR -->
-        <div class="col-12 contenedor_nav">
-                        
+        <div class="col-m-12 contenedor_nav">
+
+            <div id="colapsar"><img src="../img/flecha_abajo.svg" alt="expandir"></div>
+
             <nav class="navbar col-m-8">
-                <!-- BUSCADOR DE GOOGLE    https://programmablesearchengine.google.com/controlpanel/all -->
-                <div id="contenedor-barra">
-                  <script async src="https://cse.google.com/cse.js?cx=06fe56aee442a7a6e"></script>
-                  <div class="gcse-search"></div>
+
+                <div id="menu_principal">
+
+                    <!-- COMPONENTES DEL NAVBAR -->
+                    <ul class="navbar-ul">
+
+                        <li>
+                            <a href="../index.html" id="logo"><img src="../img/logo-mini.png" alt="logo"></a>
+                        </li>
+                        <!--  Amigurumis  -->
+                        <li id="amigurumi" class="dropdown"><a href="../nav/amigurumis.html">Amigurumis</a>
+                            <ul class="amigurumis dropdown-content">
+                                <li><a href="../nav/amigurumis/animales.html">Animales</a></li>
+                                <li><a href="../nav/amigurumis/personajes.html">Personajes</a></li>
+                                <li><a href="../nav/amigurumis/para-bebes.html">Para bebés</a></li>
+                            </ul>
+
+                        </li>
+
+                        <!-- Moda -->
+                        <li id="menu_moda" class="dropdown"><a href="../nav/moda.html">Moda</a>
+                            <ul class="moda dropdown-content">
+                                <li><a href="../nav/moda/hombre.html">Hombre</a></li>
+                                <li><a href="../nav/moda/mujer.html">Mujer</a></li>
+                                <li><a href="../nav/moda/ninyos.html">Niños</a></li>
+                                <li><a href="../nav/moda/bebes.html">Bebés</a></li>
+                                <li><a href="../nav/moda/disfraces.html">Disfraces</a></li>
+                            </ul>
+                        </li>
+
+                        <!-- Complementos -->
+                        <li id="menu_comp" class="dropdown"><a href="../nav/complementos.html">Complementos</a>
+                            <ul class="complementos dropdown-content">
+                                <li><a href="../nav/complementos/buf-chal.html">Bufandas/Chales</a></li>
+                                <li><a href="../nav/complementos/bolsos-mochi.html">Bolsos/Mochilas</a></li>
+                                <li><a href="../nav/complementos/bisuteria.html">Bisutería</a></li>
+                                <li><a href="../nav/complementos/comp-hogar.html">Complementos hogar</a></li>
+                            </ul>
+                        </li>
+
+                        <!--  Tutoriales  -->
+                        <li id="menu_tuto" class="dropdown"><a href="../nav/tutoriales.html">Tutoriales</a>
+                            <ul class="tutoriales dropdown-content">
+                                <li><a href="../nav/tutoriales/simbolos.html">Símbolos</a></li>
+                                <li><a href="../nav/tutoriales/puntos-basicos.html">Puntos básicos</a></li>
+                                <li><a href="../nav/tutoriales/puntos-fantasia.html">Puntos fantasía</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="../nav/blog.html">Blog</a></li>
+                        
+
+                    </ul>
                 </div>
-  
-                <div id="fondo-busqueda"></div>
-                <!-- FIN BUSCADOR  -->
-        
-                <div id="colapsar"><img src="../img/flecha_abajo.svg" alt="expandir"></div>
-                <div id="expandir">
-
-                <!-- COMPONENTES DEL NAVBAR -->
-        
-                <ul>
-
-                    <li><a href="../index.html" id="logo"><img src="../img/logo-mini.png" alt="logo"></a></li>
-                    <!--  Amigurumis  -->
-                    <li id="amigurumi" class="dropdown"><a href="../nav/amigurumis.html">Amigurumis</a>
-                        <ul class="amigurumis dropdown-content">
-                            <li><a href="../nav/amigurumis/animales.html">Animales</a></li>
-                            <li><a href="../nav/amigurumis/personajes.html">Personajes</a></li>
-                            <li><a href="../nav/amigurumis/para-bebes.html">Para bebés</a></li>
-                        </ul>
-
-                    </li>
-
-                    <!-- Moda -->
-                    <li id="menu_moda" class="dropdown"><a href="../nav/moda.html">Moda</a>
-                        <ul class="moda dropdown-content">
-                            <li><a href="../nav/moda/hombre.html">Hombre</a></li>
-                            <li><a href="../nav/moda/mujer.html">Mujer</a></li>
-                            <li><a href="../nav/moda/ninyos.html">Niños</a></li>
-                            <li><a href="../nav/moda/bebes.html">Bebés</a></li>
-                            <li><a href="../nav/moda/disfraces.html">Disfraces</a></li>
-                        </ul>
-                    </li>
-
-                    <!-- Complementos -->
-                    <li id="menu_comp" class="dropdown"><a href="../nav/complementos.html">Complementos</a>
-                        <ul class="complementos dropdown-content">
-                            <li><a href="../nav/complementos/buf-chal.html">Bufandas/Chales</a></li>
-                            <li><a href="../nav/complementos/bolsos-mochi.html">Bolsos/Mochilas</a></li>
-                            <li><a href="../nav/complementos/bisuteria.html">Bisutería</a></li>
-                            <li><a href="../nav/complementos/comp-hogar.html">Complementos hogar</a></li>
-                        </ul>
-                    </li>
-
-                    <!--  Tutoriales  -->
-                    <li id="menu_tuto" class="dropdown"><a href="../nav/tutoriales.html">Tutoriales</a>
-                        <ul class="tutoriales dropdown-content">
-                            <li><a href="../nav/tutoriales/simbolos.html">Símbolos</a></li>
-                            <li><a href="../nav/tutoriales/puntos-basicos.html">Puntos básicos</a></li>
-                            <li><a href="../nav/tutoriales/puntos-fantasia.html">Puntos fantasía</a></li>
-                        </ul>
-                    </li>
-                    <li><a href="../nav/blog.html">Blog</a></li>
-                    <li><a href="../nav/foro.html">Foro</a></li>
-
-                </ul>
             </nav>
-        </div> <!-- Fin del navbar -->
+            <div class="fondo_nav_principal"></div>
+        </div>
+        <!-- Fin del navbar -->
 
-<!-- ********************************************************************************* -->
-<!-- ********************************************************************************* -->
-<!-- ********************************************************************************* -->
-
+        <!-- ********************************************************************************* -->
+        <!-- ********************************************************************************* -->
+        <!-- ********************************************************************************* -->
 
         <!-- CONTENIDO PRINCIPAL -->
         <main class="col-m-12">
@@ -139,21 +149,29 @@
                     <img class="imagen-post" src="../img/puente2.jpg" alt="puente2">
                     <h2 class="post">Crochet en las calles</h2>
                     <span class="post-fecha">6 de Septiembre</span>
-                    <p class="parrafo">En este pueblo alemán tienen mucho tiempo libre. Se han dedicado a decorar este bonito puente a base de crochet. ¡Qué bonito! Pero no es el único sitio, en España también tenemos pueblos así. En un pueblo de León, Villoria todo el pueblo ha puesto su esfuerzo para crear un gran árbol de Navidad a base de cuadros de crochet. ¡Impresionante! Aquí podéis leer la noticia. https://astorgaredaccion.com/art/17169/villoria-teje-la-union-del-pueblo-con-el-arbol-de-ganchillo-mas-grande-del-mundo  </p>
+                    <p class="parrafo">En este pueblo alemán tienen mucho tiempo libre. Se han dedicado a decorar este bonito puente a base de crochet. ¡Qué bonito! Pero no es el único sitio, en España también tenemos pueblos así. En un pueblo de León, Villoria todo el
+                        pueblo ha puesto su esfuerzo para crear un gran árbol de Navidad a base de cuadros de crochet. ¡Impresionante! Aquí podéis leer la noticia.
+                    </p>
                     <button class="post-leer-mas"><a href="../nav/entradas/crochet_en_la_calle.html"> Leer más</a></button>
-               
+
                     <!-- Iconos redes sociales -->
                     <div class="iconos-social">
                         <ul>
-                            <li><a class="linkedin-share" target="_blank" href="http://www.linkedin.com/">
-                                <i class="fa fa-linkedin"></i>
-                            </a></li>
-                            <li><a class="twitter-share" target="_blank" href="https://twitter.com/">
-                                <i class="fa fa-twitter"></i>
-                            </a></li>
-                            <li><a class="facebook-share" target="_blank" href="https://www.facebook.com/">
-                                <i class="fa fa-facebook"></i>
-                            </a></li>
+                            <li>
+                                <a class="linkedin-share" target="_blank" href="http://www.linkedin.com/">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="twitter-share" target="_blank" href="https://twitter.com/">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="facebook-share" target="_blank" href="https://www.facebook.com/">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </article>
@@ -161,20 +179,27 @@
                     <img class="imagen-post" src="../img/agujas1.jpg" alt="agujas">
                     <h2 class="post">Qué aguja escoger</h2>
                     <span class="post-fecha">5 de octubre de 2021 </span>
-                    <p class="parrafo">Como elegir la aguja adecuada para los amigurumi DIY con trucos para saber como elegir la aguja adecuada para tejer tus amigurumi sin que se queden esos agujeros que no quedan nada estéticos. No elegir la aguja correcta es un fallo muy común, sobre todo en principiantes.  </p>
+                    <p class="parrafo">Como elegir la aguja adecuada para los amigurumi DIY con trucos para saber como elegir la aguja adecuada para tejer tus amigurumi sin que se queden esos agujeros que no quedan nada estéticos. No elegir la aguja correcta es un fallo
+                        muy común, sobre todo en principiantes. </p>
                     <button class="post-leer-mas"><a href="../nav/entradas/que_aguja.html"> Leer más</a></button>
                     <div class="iconos-social">
                         <ul>
-                            
-                            <li><a class="linkedin-share" target="_blank" href="http://www.linkedin.com/">
-                                <i class="fa fa-linkedin"></i>
-                            </a></li>
-                            <li><a class="twitter-share" target="_blank" href="https://twitter.com/">
-                                <i class="fa fa-twitter"></i>
-                            </a></li>
-                            <li><a class="facebook-share" target="_blank" href="https://www.facebook.com/">
-                                <i class="fa fa-facebook"></i>
-                            </a></li>
+
+                            <li>
+                                <a class="linkedin-share" target="_blank" href="http://www.linkedin.com/">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="twitter-share" target="_blank" href="https://twitter.com/">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="facebook-share" target="_blank" href="https://www.facebook.com/">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </article>
@@ -182,19 +207,26 @@
                     <img class="imagen-post" src="../img/ojos-amigurumi.jpg" alt="ojos">
                     <h2 class="post">Ojos para amigurumi</h2>
                     <span class="post-fecha">5 de octubre de 2021 </span>
-                    <p class="parrafo">Cuando tejemos un amigurumi tenemos que decidir que tipo de ojos vamos a utilizar. Podemos poner ojos de seguridad para que los niños no los arranquen y se los puedan tragar p simplemente tejerlor. Aquí dejo unos video tutoriales con varias opciones. Espero que les gusten!     </p>
+                    <p class="parrafo">Cuando tejemos un amigurumi tenemos que decidir que tipo de ojos vamos a utilizar. Podemos poner ojos de seguridad para que los niños no los arranquen y se los puedan tragar p simplemente tejerlor. Aquí dejo unos video tutoriales con
+                        varias opciones. Espero que les gusten! </p>
                     <button class="post-leer-mas"><a href="../nav/entradas/ojos_amigurumi.html">Leer más</a></button>
                     <div class="iconos-social">
                         <ul>
-                            <li><a class="linkedin-share" target="_blank" href="http://www.linkedin.com/">
-                                <i class="fa fa-linkedin"></i>
-                            </a></li>
-                            <li><a class="twitter-share" target="_blank" href="https://twitter.com/">
-                                <i class="fa fa-twitter"></i>
-                            </a></li>
-                            <li><a class="facebook-share" target="_blank" href="https://www.facebook.com/">
-                                <i class="fa fa-facebook"></i>
-                            </a></li>
+                            <li>
+                                <a class="linkedin-share" target="_blank" href="http://www.linkedin.com/">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="twitter-share" target="_blank" href="https://twitter.com/">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="facebook-share" target="_blank" href="https://www.facebook.com/">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </article>
@@ -203,19 +235,25 @@
                     <img class="imagen-post" src="../img/sonajero-redondo.png" alt="sonajero">
                     <h2 class="post">Sonajero redondo</h2>
                     <span class="post-fecha">5 de octubre de 2021 </span>
-                    <p class="parrafo">En este video tutorial puedes aprender a tejer estos bonitos sonajeros con asa redonda. Hay dos modelos. Una linda oveja y un patito amarillo.   </p>
+                    <p class="parrafo">En este video tutorial puedes aprender a tejer estos bonitos sonajeros con asa redonda. Hay dos modelos. Una linda oveja y un patito amarillo. </p>
                     <button class="post-leer-mas"> <a href="../nav/entradas/sonajero_redondo.html">Leer más</a></button>
                     <div class="iconos-social">
                         <ul>
-                            <li><a class="linkedin-share" target="_blank" href="http://www.linkedin.com/">
-                                <i class="fa fa-linkedin"></i>
-                            </a></li>
-                            <li><a class="twitter-share" target="_blank" href="https://twitter.com/">
-                                <i class="fa fa-twitter"></i>
-                            </a></li>
-                            <li><a class="facebook-share" target="_blank" href="https://www.facebook.com/">
-                                <i class="fa fa-facebook"></i>
-                            </a></li>
+                            <li>
+                                <a class="linkedin-share" target="_blank" href="http://www.linkedin.com/">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="twitter-share" target="_blank" href="https://twitter.com/">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="facebook-share" target="_blank" href="https://www.facebook.com/">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </article>
@@ -223,19 +261,27 @@
                     <img class="imagen-post" src="../img/patucos.jpg" alt="patucos">
                     <h2 class="post">Patucos a crochet</h2>
                     <span class="post-fecha">5 de octubre de 2021 </span>
-                    <p class="parrafo">Hoy te enseño como tejer unos patucos a crochet paso a paso. La verdad es que quedan preciosos y son muy cómodos. Muchas veces los bebés no llevan zapatos y esta es una alternativa bonita y cómoda para que de vez en cuando quiera llevar patucos. Además, en verano puedes utilizar hilo más suave y fresco (algodón) y en invierno un hilo más calentito (lana). ¿Te animas a tejer estos patucos?   Materiales 30 g de lana. Recuerda que en verano es mejor algodón 100% y en invierno lana. Aguja de crochet del número 3.5 mm. Puntos que vamos a utilizar Cad.: cadeneta P.m.a.: punto medio alto P.b.: punto bajo P.d.: punto deslizado Dism.:…  </p>
+                    <p class="parrafo">Hoy te enseño como tejer unos patucos a crochet paso a paso. La verdad es que quedan preciosos y son muy cómodos. Muchas veces los bebés no llevan zapatos y esta es una alternativa bonita y cómoda para que de vez en cuando quiera llevar
+                        patucos. Además, en verano puedes utilizar hilo más suave y fresco (algodón) y en invierno un hilo más calentito (lana). ¿Te animas a tejer estos patucos? Materiales 30 g de lana. Recuerda que en verano es mejor algodón 100% y
+                        en invierno lana. Aguja de crochet del número 3.5 mm. Puntos que vamos a utilizar Cad.: cadeneta P.m.a.: punto medio alto P.b.: punto bajo P.d.: punto deslizado Dism.:… </p>
                     <button class="post-leer-mas"> <a href="../nav/entradas/patucos_crochet.html">Leer más</a></button>
                     <div class="iconos-social">
                         <ul>
-                            <li><a class="linkedin-share" target="_blank" href="http://www.linkedin.com/">
-                                <i class="fa fa-linkedin"></i>
-                            </a></li>
-                            <li><a class="twitter-share" target="_blank" href="https://twitter.com/">
-                                <i class="fa fa-twitter"></i>
-                            </a></li>
-                            <li><a class="facebook-share" target="_blank" href="https://www.facebook.com/">
-                                <i class="fa fa-facebook"></i>
-                            </a></li>
+                            <li>
+                                <a class="linkedin-share" target="_blank" href="http://www.linkedin.com/">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="twitter-share" target="_blank" href="https://twitter.com/">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="facebook-share" target="_blank" href="https://www.facebook.com/">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </article>
@@ -247,24 +293,30 @@
                     <button class="post-leer-mas"><a href="../nav/entradas/gorrito_oso.html">Leer más</a> </button>
                     <div class="iconos-social">
                         <ul>
-                            <li><a class="linkedin-share" target="_blank" href="http://www.linkedin.com/">
-                                <i class="fa fa-linkedin"></i>
-                            </a></li>
-                            <li><a class="twitter-share" target="_blank" href="https://twitter.com/">
-                                <i class="fa fa-twitter"></i>
-                            </a></li>
-                            <li><a class="facebook-share" target="_blank" href="https://www.facebook.com/">
-                                <i class="fa fa-facebook"></i>
-                            </a></li>
+                            <li>
+                                <a class="linkedin-share" target="_blank" href="http://www.linkedin.com/">
+                                    <i class="fa fa-linkedin"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="twitter-share" target="_blank" href="https://twitter.com/">
+                                    <i class="fa fa-twitter"></i>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="facebook-share" target="_blank" href="https://www.facebook.com/">
+                                    <i class="fa fa-facebook"></i>
+                                </a>
+                            </li>
                         </ul>
                     </div>
                 </article>
                 <article>
                     <h2 class="post">¡Bienvenidos!</h2>
                     <span class="post-fecha">28 de septiembre de 2021</span>
-                    <p class= "parrafo"> Bienvenidos a mi blog. Aquí podréis encontrar nuevos tutoriales y otras cosas curiosas. Si queréis podéis comentar. Estaré encantada de responderos.</p>
+                    <p class="parrafo"> Bienvenidos a mi blog. Aquí podréis encontrar nuevos tutoriales y otras cosas curiosas. Si queréis podéis comentar. Estaré encantada de responderos.</p>
                     <div class="iconos-social"></div>
-                </article> 
+                </article>
 
 
             </section>
@@ -272,16 +324,16 @@
 
         </main>
 
-         <!-- FOOTER -->
-         <footer>
+        <!-- FOOTER -->
+        <footer>
             <div class="footer-content col-m-8">
 
                 <div class="col-m-4 social">
                     <ul>
-                        <li><a href="www.facebook.com"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="www.youtube.com"><i class="fa fa-youtube-play"></i></a></li>
-                        <li><a href="www.instagram.com"><i class="fa fa-instagram"></i></a></li>
-                        <li><a href="www.twitter.com"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://www.youtube.com" target="_blank"><i class="fa fa-youtube-play"></i></a></li>
+                        <li><a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter"></i></a></li>
                     </ul>
 
                 </div>
@@ -296,7 +348,10 @@
 
         </footer>
         <span class="copyright-info">©Raquel Valle Natal</span>
+
+        <!-- ICONO SCROLL -->
         <div class="scroll"><img src="../img/scroll.svg" alt="scroll"></div>
     </div>
 </body>
+
 </html>

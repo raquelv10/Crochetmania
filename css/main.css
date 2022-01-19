@@ -1,9 +1,9 @@
 /* ESTILOS GENERALES DEL PROYECTO FINAL "CROCHETMANIA" */
 
+
 /* Paleta de colores de nuestro SITIO */
 
 @import url('https://fonts.googleapis.com/css2?family=Aclonica&family=Poppins:wght@300&display=swap');
-
 :root {
     --color-secundario: rgb(246, 223, 252);
     --color-texto: #030303;
@@ -27,10 +27,11 @@ body {
     height: 100%;
     color: var(--color-texto);
     z-index: -1;
-    
 }
 
-body, p, h4 {
+body,
+p,
+h4 {
     font-family: 'Poppins', sans-serif;
     color: var(--color-texto);
 }
@@ -45,7 +46,13 @@ body, p, h4 {
     text-align: center;
 }
 
-h2, h3, h1 {
+.parrafo {
+    width: 80%;
+}
+
+h2,
+h3,
+h1 {
     font-family: 'Aclonica', sans-serif;
 }
 
@@ -55,34 +62,37 @@ h2 {
     font-weight: 400;
 }
 
+
 /* *****************ASIDE IZQUIERDO******************** */
 
+
 /* Corresponde al fondo negro que aparece al abrir el aside */
+
 .contenedor-aside {
     width: 100%;
     height: 100%;
     background-color: hsla(0, 0%, 0%, 0.4);
-    position:fixed;
-    top:0;
-    left:0;
-    display:none!important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none!important;
     z-index: 20;
-    
 }
 
+
 /* Corresponde al contenido del Aside Izquierdo que se abre al clicar en el icono burguer */
+
 .content-aside {
-    padding:20px;
+    padding: 20px;
     background-color: white;
     width: 276px;
     height: 100%;
     position: fixed;
-    top:0;
-    left:-20%;
+    top: 0;
+    left: -20%;
     z-index: 21;
-    opacity:0;
+    opacity: 0;
     transition: opacity 1s linear;
-    
 }
 
 .content-aside h2 {
@@ -93,22 +103,30 @@ h2 {
 
 .content-aside a {
     text-decoration: none;
-    color:darkblue;
-    display:block;
+    color: darkblue;
+    display: block;
     margin-left: 30px;
+    padding: 20px;
+    border-bottom: dotted;
 }
- /* para que se abra hacia la izquierda */
+
+
+/* para que se abra hacia la izquierda */
+
 .izquierda {
-    left:0!important;
-    opacity:1;
+    left: 0!important;
+    opacity: 1;
     transition: opacity 1s linear;
 }
 
+
 /* para que sea visible */
+
 .visible {
-    display:block!important;
-  
+    display: block!important;
 }
+
+
 /* ******************************FIN ASIDE************************** */
 
 
@@ -121,40 +139,43 @@ h2 {
 
 #burguer {
     position: absolute;
-    top:8px;
-    left:250px;
+    top: 8px;
+    left: 250px;
     width: 24px;
     height: 24px;
-    margin:0!important;
-    z-index: 9999999;    
+    margin: 0!important;
+    z-index: 9999999;
 }
+
 #burguer img {
-    margin:0!important;
+    margin: 0!important;
 }
 
 #burguer:hover {
     cursor: pointer;
 }
 
-
 .cuenta {
     height: 38px;
-    width: 100vw;
+    width: 100%;
 }
 
+
 /* *********nav superior tamaño grande************************************************** */
+
 .cuenta-ul {
-    float:right;
-    top:-5px; 
+    float: right;
+    top: -5px;
     background-color: white;
-    padding:0;
+    padding: 0;
     list-style: none;
     transition: all 1s;
 }
+
 .cuenta li {
-    display:inline;
-    margin:10px 15px;
-    padding:10px 15px;
+    display: inline;
+    margin: 10px 15px;
+    padding: 10px 15px;
     text-align: center;
 }
 
@@ -162,42 +183,47 @@ h2 {
     text-decoration: none;
     color: #333;
     font-weight: bold;
-
 }
 
 .cuenta a:hover {
     text-decoration: underline;
     color: var(--color-texto-resaltado);
 }
+
+
 /* *************fin********************************************** */
+
 
 /* **********nav superior tamaño pequeño ************************* */
 
 .fondo_nav_superior {
-    width: 100vw;
-    height: 99vh;
-    position:relative;
+    width: 100%;
+    height: 900px;
+    position: absolute;
     top: -8px;
-    margin:0;
-    padding:0;
+    left: 0;
+    margin: 0;
+    padding: 0;
     background-color: rgba(0, 0, 0, 0.158);
-    display: none; 
-    z-index:99999;
-} 
+    display: none;
+    z-index: 99999;
+}
 
-.expandir { /* div de la imagen flecha */
-    display:none;
-    position:relative;
-    z-index:999992;
-    
-    
+.expandir {
+    /* div de la imagen flecha */
+    display: none;
+    position: relative;
+    z-index: 999992;
 }
-.expandir img {  /* imagen flecha */
-    position:absolute;
-    top:-32px;
-    left:50%;
-    z-index:999992;
+
+.expandir img {
+    /* imagen flecha */
+    position: absolute;
+    top: -32px;
+    left: 50%;
+    z-index: 999992;
 }
+
 
 /* ******************************FIN NAVBAR SUPERIOR*************************************** */
 
@@ -206,25 +232,24 @@ h2 {
 
 #icon-search {
     position: absolute;
-    top:8px!important;
+    top: 8px!important;
     width: 24px!important;
     height: 24px!important;
-    left:290px;
+    left: 290px;
     cursor: pointer;
     transition: all 300ms;
-    display:none;
-    margin:0;
+    display: none;
+    margin: 0;
 }
 
 #contenedor-barra {
     position: fixed;
-    top:-115px ;
-    left:0;
+    top: -115px;
+    left: 0;
     width: 100vw;
     background: #fff;
-    z-index: 9; 
+    z-index: 9;
     transition: all 600ms;
-   
 }
 
 #caja-busqueda {
@@ -255,32 +280,33 @@ h2 {
     color: #777777;
 }
 
-
 #fondo-busqueda {
-    width: 100%;
+    width: 95%;
     height: 100%;
     position: fixed;
-    top:0;
+    top: 0;
     left: 0;
     background: rgba(0, 0, 0, 0.5);
     z-index: 7;
     display: none;
 }
+
+
 /* ********FIN BUSCADOR************ */
 
 
 /* *********HEADER**************** */
+
 header {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    width: 100vw;
+    width: 100%;
     height: 75vh;
     background-image: url(../img/cabecera.jpg);
     background-position: center;
-    background-size:cover;
+    background-size: cover;
     background-repeat: no-repeat;
-
 }
 
 header div {
@@ -295,10 +321,11 @@ header div {
 
 
 /* **********NAVBAR PRINCIPAL*********** */
+
 .contenedor_nav {
     position: relative;
     background-color: white;
-    width: 100vw;
+    width: 100%;
     height: 37px;
     display: flex;
     justify-content: center;
@@ -320,7 +347,7 @@ header div {
     padding: 7px 0;
     width: auto;
     max-width: 1200px;
-    position:relative;
+    position: relative;
 }
 
 .navbar ul {
@@ -339,6 +366,14 @@ header div {
     margin: 10px;
 }
 
+.nivel1 {
+    z-index: 6;
+}
+
+.nivel2 {
+    z-index: 7;
+}
+
 .navbar a {
     text-decoration: none;
     color: var(--color-texto);
@@ -354,7 +389,6 @@ header div {
     display: flex;
     justify-content: center;
     align-items: center;
-    z-index: 9999;
 }
 
 .dropdown-content {
@@ -364,13 +398,11 @@ header div {
     box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
     display: none !important;
     transition: display 3s linear;
-    
+    z-index: 10;
 }
 
 .dropdown:hover .dropdown-content {
     display: block !important;
-    
-    
 }
 
 .dropdown-content a {
@@ -379,61 +411,35 @@ header div {
     padding: 0px 30px;
     text-decoration: none;
     display: block;
-   
 }
+
 
 /* ******************************Colapsar en responsive********************************************** */
 
-
 .fondo_nav_principal {
-    width: 100vw;
-    height: 50vh;
-    position:absolute;
+    width: 100%;
+    height: 800px;
+    position: absolute;
     top: 38px;
-    left:0;
-    margin:0;
-    padding:0;
+    left: 0;
+    margin: 0;
+    padding: 0;
     background-color: rgba(0, 0, 0, 0.158);
-    display: none; 
-    z-index:99999;
-}
-/* 
-.responsive {
-    
-    flex-direction: column!important;
-    position:relative;
-    left:92%;
-    top:267px;
-    width: 250px;
-    height: 500px;
-    background-color: white!important;
-    box-shadow: 2px 2px 8px rgb(187, 186, 186);
-    transition: all 1s;
-    z-index:999991;
-}
- */
-.cuenta_vertical2 ul li {
-    margin:10px;
-        
+    display: none;
+    z-index: 99999;
 }
 
-.cuenta_vertical2 .dropdown-content {
-    left:0;
-    top:-20px;
-    z-index:999999991!important;
-} 
 #colapsar {
-    position:absolute;
-    top:10px;
-    left:50%;
+    position: absolute;
+    top: 10px;
+    left: 50%;
     cursor: pointer;
     transition: display .5s;
-    
-}
-#colapsar img {
-    display:none;
 }
 
+#colapsar img {
+    display: none;
+}
 
 #colapsar:hover+ul {
     display: grid;
@@ -442,68 +448,73 @@ header div {
 #expandir {
     height: auto;
     position: relative;
-    
-}
-.expandir img {
-    cursor:pointer;
 }
 
+.expandir img {
+    cursor: pointer;
+}
 
 
 /***********************************Fin Dropdown***************************************************/
 
 
 /* **************MAIN  CONTENIDO PRIMCIPAL************ */
+
 main {
     display: flex;
     justify-content: center;
     margin: auto;
     flex-grow: 1;
     padding: 0 !important;
-
 }
+
 .construccion {
-    display:flex;
+    display: flex;
     justify-content: center;
     flex-direction: column;
     align-items: center;
 }
+
 section {
     padding: 40px !important;
     background-color: white;
-
 }
 
 .separador {
     height: 40px;
-    border:0;
+    border: 0;
 }
 
+
 /* Estilo de los botones */
-.enlaces, .enlaces_ami, .enlaces_comp {
+
+.enlaces,
+.enlaces_ami,
+.enlaces_comp {
     padding: 50px 100px;
     display: flex;
     justify-content: space-between;
-
 }
+
 .enlaces_ami {
     padding: 50px 100px;
     display: flex;
     justify-content: space-around;
-    
 }
+
 .enlaces_ami button {
-    margin:5px;
+    margin: 5px;
 }
+
 button {
     width: 150px;
     padding: 10px 20px;
     background-color: var(--color-fondo-botones);
     border: none;
     border: 2px solid var(--color-borde-botones);
-
     border-radius: 5px;
 }
+
 .botones_big {
     width: 150px;
     padding: 10px 7px;
@@ -512,10 +523,10 @@ button {
     border: 2px solid var(--color-borde-botones);
     border-radius: 5px;
 }
+
 button:hover {
     border: 2px solid var(--color-borde-botones-hover);
     box-shadow: 2px 2px 8px var(--color-sombra-botones-hover);
-
 }
 
 button a {
@@ -525,29 +536,32 @@ button a {
     font-family: 'Poppins', sans-serif;
     color: white;
     text-decoration: none;
-
 }
 
 
 /* ************FOOTER************* */
+
 footer {
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
-
 }
+
 .footer-content {
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin:30px;
+    margin: 30px;
     padding: 0 5%;
-
 }
 
+
 /**************** Estilos de social media en el footer *********************/
+
+
 /***************************************************************************/
+
 .fa {
     font-size: 24px;
 }
@@ -614,18 +628,26 @@ footer {
     color: white;
 }
 
+
 /************************Fin estilos social media***************************/
+
+
 /***************************************************************************/
+
+
 /***************************************************************************/
+
+
 /***************************************************************************/
 
 
 /* ****************POLITICA DE PRIVACIDAD*********************************** */
 
-#priv {  /* Botón Política de Privacidad */
+#priv {
+    /* Botón Política de Privacidad */
     float: right;
     width: 200px;
-    padding: 10px 20px;
+    padding: 10px;
     background-color: var(--color-fondo-botones);
     border: none;
     border: 2px solid var(--color-borde-botones);
@@ -635,26 +657,27 @@ footer {
 #priv:hover {
     border: 2px solid var(--color-borde-botones-hover);
     box-shadow: 2px 2px 8px var(--color-sombra-botones-hover);
-
 }
 
+
 /* *************COPYRIGHT************ */
+
 .copyright-info {
-
     float: right;
-    padding-right: 40px;
-
-    margin-right: 50px;
+    width: 145px;
+    background-color: rgba(0, 0, 0, 0.397);
     color: white;
     font-size: 1em;
     font-family: 'Lato', sans-serif;
 }
 
+
 /* *************SCROLL***************** */
+
 .scroll img {
     position: fixed !important;
-    bottom: 5% !important;
-    right: 2% !important;
+    bottom: 7% !important;
+    right: 8% !important;
     display: none;
     width: 50px;
     height: 50px;
@@ -662,45 +685,78 @@ footer {
     background-color: var(--color-borde-botones-hover);
     box-shadow: 0px 9px 8px #333;
     transition: bottom 1s;
-
 }
 
-
-.scroll img:hover, .scroll {
+.scroll img:hover,
+.scroll {
     box-shadow: 0px 9px 12px #333;
-    bottom: 4% !important;
-
+    bottom: 9% !important;
 }
 
 
 /******************* CSS COOKIES**************** */
+
+
 /* CSS para la animación y localización de los DIV de cookies */
 
 @keyframes desaparecer {
-    0% {bottom: 0px;}
-    80% {bottom: 0px;}
-    100% {bottom: -50px;}
+    0% {
+        bottom: 0px;
+    }
+    80% {
+        bottom: 0px;
+    }
+    100% {
+        bottom: -50px;
+    }
 }
+
+
 /* Safari and Chrome */
-@-webkit-keyframes desaparecer{
-    0% {bottom: 0px;}
-    80% {bottom: 0px;}
-    100% {bottom: -50px;}
+
+@-webkit-keyframes desaparecer {
+    0% {
+        bottom: 0px;
+    }
+    80% {
+        bottom: 0px;
+    }
+    100% {
+        bottom: -50px;
+    }
 }
 
 @keyframes aparecer {
-    0% {bottom: -38px;}
-    10% {bottom: 0px;}
-    90% {bottom: 0px;}
-    100% {bottom: -38px;}
+    0% {
+        bottom: -168px;
+    }
+    10% {
+        bottom: 0px;
+    }
+    90% {
+        bottom: 0px;
+    }
+    100% {
+        bottom: -168px;
+    }
 }
 
+
 /* Safari and Chrome */
+
 @-webkit-keyframes aparecer {
-    0% {bottom: -38px;}
-    10% {bottom: 0px;}
-    90% {bottom: 0px;}
-    100% {bottom: -38px;}
+    0% {
+        bottom: -168px;
+    }
+    10% {
+        bottom: 0px;
+    }
+    90% {
+        bottom: 0px;
+    }
+    100% {
+        bottom: -168px;
+    }
 }
 
 #cookiesms1:target {
@@ -708,16 +764,17 @@ footer {
 }
 
 .cookiesms {
-    width: 100%;
-    height: 43px;
+    width: 70%;
+    height: 69px;
+    border-radius: 10px;
     margin: 0 auto;
     padding-left: 1%;
     padding-top: 5px;
-    font-size: 20px;
+    font-size: 16px;
     clear: both;
     font-weight: strong;
     color: #333;
-    bottom: -50px;
+    bottom: -70px;
     position: fixed;
     left: 0px;
     background-color: #FFF;
@@ -756,20 +813,19 @@ footer {
     -moz-box-shadow: 3px -3px 1px rgba(50, 50, 50, 0.56);
     box-shadow: 3px -3px 1px rgba(50, 50, 50, 0.56);
 }
+
 span {
     margin-bottom: 20px;
 }
 
-.tabla-cookies{
-    margin:20px;
+.tabla-cookies td {
+    margin: 20px;
+    border-bottom: 1px solid rgb(141, 138, 138, .5);
 }
 
-.tabla-cookies td {
-    padding:30px;
-    margin:20px;
-    border-bottom: 1px solid rgb(141, 138, 138,.5);
-}
 #boton-cookies {
-    width:  100px;
+    width: 100px;
 }
+
+
 /*************** Fin del CSS para cookies************* */

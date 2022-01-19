@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
     h2.appendChild(titulo);
     div_content_aside.appendChild(h2);
 
-    for(let i=0; i<=6; i++){
+    for(let i=0; i<6; i++){
         const href = document.createElement("a");
         div_content_aside.appendChild(href);
     }
@@ -22,18 +22,18 @@ document.addEventListener("DOMContentLoaded", () => {
     contenedor_aside.appendChild(div_content_aside);
     let href = document.querySelectorAll(".content-aside a");
 
-    href[1].setAttribute("href","../../nav/entradas/gorrito_oso.html");
-    href[1].textContent = "Gorrito con orejas de oso";
-    href[2].setAttribute("href","../../nav/entradas/crochet_en_la_calle.html");
-    href[2].textContent = "Crochet en las calles";
-    href[3].setAttribute("href","../../nav/entradas/patucos_crochet.html");
-    href[3].textContent = "Patucos a crochet"
-    href[4].setAttribute("href","../../nav/entradas/ojos_amigurumi.html");
-    href[4].textContent = "Ojos para amigurumis";
-    href[5].setAttribute("href","../../nav/entradas/que_aguja.html");
-    href[5].textContent = "Qué aguja escoger";
-    href[6].setAttribute("href","../../nav/entradas/sonajero_redondo.html");
-    href[6].textContent = "Sonajero con asa redonda";
+    href[0].setAttribute("href","../../nav/entradas/gorrito_oso.html");
+    href[0].textContent = "Gorrito con orejas de oso";
+    href[1].setAttribute("href","../../nav/entradas/crochet_en_la_calle.html");
+    href[1].textContent = "Crochet en las calles";
+    href[2].setAttribute("href","../../nav/entradas/patucos_crochet.html");
+    href[2].textContent = "Patucos a crochet"
+    href[3].setAttribute("href","../../nav/entradas/ojos_amigurumi.html");
+    href[3].textContent = "Ojos para amigurumis";
+    href[4].setAttribute("href","../../nav/entradas/que_aguja.html");
+    href[4].textContent = "Qué aguja escoger";
+    href[5].setAttribute("href","../../nav/entradas/sonajero_redondo.html");
+    href[5].textContent = "Sonajero con asa redonda";
 
      
      

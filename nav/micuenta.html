@@ -5,6 +5,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulario</title>
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+    <title>Crochetmania-Amigurumis</title>
     <!-- favicon -->
     <link rel="icon" type="image/png" href="../img/favicon.png">
     <!--  fin favicon -->
@@ -16,16 +18,18 @@
 </head>
 
 <body>
+    <!-- Logo para volver a inicio -->
     <div id="inicio">
-        <a href="../index.html"><img src="../img/logo-mini.png" alt="inicio"></a>
+        <a href="../index.html">inicio</a>
     </div>
 
-    
+    <!-- DIV que contiene el degradado de fondo -->
     <div class="background-animation-container">
         <div class="background-gradient"></div>
     </div>
     
-    <form id= "registro" class="col-m-3" method="POST" autocomplete="off">
+    <!-- FORMULARIO REGISTRO -->
+    <form id= "registro" class="col-m-3" method="post" autocomplete="off">
         <div class="form">
             <h1>Registro</h1>
             <div class="grupo">
@@ -52,9 +56,11 @@
                 <p id="aviso_password2"></p>
             </div>
 
-            <button type="submit" class="registrar">Regístrate</button>
+            <button class="registrar">Regístrate</button>
         </div>
     </form>
+
+    <!-- FORMULARIO LOGIN -->
     <form id="login" class="col-m-3" method="POST" autocomplete="off">
         <div class="form">
             <h1>Login</h1>
@@ -76,7 +82,7 @@
               
             </div>
                        
-            <button type="submit" class="iniciar">Inicia sesión</button>
+            <button class="iniciar">Inicia sesión</button>
         </div>
     </form>
 

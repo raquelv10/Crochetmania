@@ -9,42 +9,82 @@
     <!-- favicon -->
     <link rel="icon" type="image/png" href="../../img/favicon.png">
     <!--  fin favicon -->
-    <link rel="stylesheet" href="../../css/main.css">
-    <link rel="stylesheet" href="../../css/reponsive.css">
+    
     <link rel="stylesheet" href="../../css/Pre-loader.css">
+    <link rel="stylesheet" href="../../css/reponsive.css">
     <link rel="stylesheet" href="../../css/videos.css">
+    <link rel="stylesheet" href="../../css/main.css">
     <script src="../../js/scroll.js"></script>
     <script src="../../js/pre-loader.js"></script>
+    <script src="../../js/sesion3.js"></script>
     <script src="../../js/aside3.js"></script>
+    <script src="../../js/buscador.js"></script>
+    <script src="../../js/colapsar.js"></script>
+    <script src="../../js/cookies.js"></script>
 </head>
 
 <body>
+    <!-- div de carga del PRE-LOADER -->
     <div class="pre-loader"></div>
+    
+    <!-- DIV CONTENEDOR DE TODO -->
     <div class="container">
+        <!-- ASIDE -->
         <div class="contenedor-aside"></div>
+
+        <!-- NAV SUPERIOR -->
         <div class="col-m-12 contenedor_nav_cuenta">
             <nav class="cuenta">
+                <!-- ICONOS DE BURGUER Y BÚSQUEDA -->
+                <div id="contenedor-iconSearch"><img id="icon-search" src="../../img/lupa.svg" alt="buscar"></div>
                 <div id="burguer"><img src="../../img/burguer.png" alt="menu"></div>
-                <ul>
-                    <li><a href="../../nav/micuenta.html">Mi Cuenta</a></li>
+                <!-- ENLACES NAV SUPERIOR -->
+                <ul class="cuenta-ul">
+                    <li><a id="micuenta" href="../../nav/micuenta.html">Iniciar sesión</a></li>
                     <li><a href="../../nav/carrito.html">Carrito</a></li>
                     <li><a href="../../nav/tienda.html">Tienda</a></li>
                     <li><a href="../../nav/contacto.html">Contacto</a></li>
 
                 </ul>
             </nav>
+            <div class="fondo_nav_superior"></div>
         </div>
+        <div class="expandir"><img src="../../img/flecha_abajo.svg" alt="expandir"></div>
+        
+        <!-- Código de cookies -->
+        <div class="cookiesms" id="cookie1">
+            Este sitio web usa cookies, puedes ver <a href="../nav/cookies.html">la política de cookies, aquí</a> -
+            <button id="boton-cookies">Aceptar</button>
+            <div class="cookies2">Política de cookies + </div>
+        </div>
+
+        <!-- HEADER --->
         <header>
 
             <div></div>
 
         </header>
+
+        <!-- BUSCADOR DE GOOGLE    https://programmablesearchengine.google.com/controlpanel/all -->
+        <div id="contenedor-barra">
+            <script async src="https://cse.google.com/cse.js?cx=06fe56aee442a7a6e"></script>
+            <div class="gcse-search"></div>
+        </div>
+
+        <div id="fondo-busqueda"></div>
+        <!-- FIN BUSCADOR  -->
+
+        <!-- NAVBAR -->
         <div class="col-m-12 contenedor_nav">
+
+            <div id="colapsar"><img src="../../img/flecha_abajo.svg" alt="expandir"></div>
             
             <nav class="navbar col-m-8">
-                <div id="colapsar"><img src="../../img/flecha_abajo.svg" alt="expandir"></div>
-                <div id="expandir">
-                    <ul>
+                                
+                <div id="menu_principal">
+                
+                    <!-- COMPONENTES DEL NAVBAR -->
+                    <ul class="navbar-ul">
 
                         <li><a href="../../index.html" id="logo"><img src="../../img/logo-mini.png" alt="logo"></a></li>
                         <!--  Amigurumis  -->
@@ -87,50 +127,73 @@
                             </ul>
                         </li>
                         <li><a href="../../nav/blog.html">Blog</a></li>
-                        <li><a href="../../nav/foro.html">Foro</a></li>
+                        
 
                     </ul>
                 </div>
             </nav>
-        </div> <!-- Fin del navbar -->
+            <div class="fondo_nav_principal"></div>
+        </div>
+        <!-- Fin del navbar -->
 
         <!-- ********************************************************************************* -->
         <!-- ********************************************************************************* -->
         <!-- ********************************************************************************* -->
 
-
+        <!-- CONTENIDO PRINCIPAL -->
         <main class="col-m-12">
             <section class="col-m-8 contenedor_videos">
+
                 <h2 id="osito-mordedor">Osito mordedor para bebés</h2>
                 <div class="separador"></div>
-                <img src="../../img/mordedor-osito.jpg" alt="osito-mordedor">
+                <img class="foto" src="../../img/mordedor-osito.jpg" alt="osito-mordedor">
                 <h4>Aprende a hacer un bonito mordedor osito a crochet con la técnica amigurumi para bebés. Fácil, sencillo y rápido de hacer. Solo sigue las instrucciones con el paso a paso del vídeo tutorial.</h4>
                 <iframe title="Tutorial osito mordedor para bebés Amigurumi Crochet | Ganchillo" width="960"
                     height="720" src="https://www.youtube.com/embed/3BSHrKPSY94" frameborder="0"></iframe>
 
                 <h2 id="pulpo">Pulpo amigurumi para bebés prematuros</h2>
                 <div class="separador"></div>
-                <img src="../../img/Pulpo-prematuros.jpg" alt="pulpo_prematuros">
+                <img class="foto" src="../../img/Pulpo-prematuros.jpg" alt="pulpo_prematuros">
                 <h4>Aprende a tejer pulpos solidarios para Bebés prematuros. Un proyecto para ayudar a bebés recién nacidos. Estos bonitos y tiernos pulpos a crochet, les ayuda cuando no están en contacto con sus madres a mantenerlos tranquilos en sus cunas o incubadoras, el contacto con los tentáculos del pulpo les da la sensación de que es el cordón umbilical.</h4>
                 <iframe width="960" height="540" src="https://www.youtube.com/embed/bD23TuKNTow" title="Tutorial Pulpo para bebés prematuros Crochet | Ganchillo" frameborder="0"></iframe>
 
 
                 <h2 id="sonajero">Sonajero</h2>
                 <div class="separador"></div>
-                <img src="../../img/sonajero-redondo.png" alt="sonajero">
+                <img class="foto" src="../../img/sonajero-redondo.png" alt="sonajero">
                 <h4>Aquí tienes el video tutorial</h4>
                 <iframe width="960" height="540" src="https://www.youtube.com/embed/IiNzICXw9ME" title="Tutorial Sonajero redondo Crochet | Ganchillo" frameborder="0"></iframe>
 
-
-
             </section>
-
 
         </main>
 
+       <!-- FOOTER -->
         <footer>
-            <p>© Raquel Valle Natal</p>
+            <div class="footer-content col-m-8">
+
+                <div class="col-m-4 social">
+                    <ul>
+                        <li><a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://www.youtube.com" target="_blank"><i class="fa fa-youtube-play"></i></a></li>
+                        <li><a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                    </ul>
+
+                </div>
+                <div class="col-m-4"> </div>
+                <div class="col-m-4 privacidad">
+                    <button id="priv"><a href="../../nav/privacidad.html">Política de
+                            privacidad</a></button>
+                </div>
+
+            </div>
+            <div class="separador"></div>
+
         </footer>
+        <span class="copyright-info">©Raquel Valle Natal</span>
+
+        <!-- ICONO SCROLL -->
         <div class="scroll"><img src="../../img/scroll.svg" alt="scroll"></div>
     </div>
 </body>

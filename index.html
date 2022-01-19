@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="google-site-verification" content="cDMili4Kfv3efjzx6St_0NaCUD2FJwmDuxntAEDlEHM" />
     <title>Crochetmania</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
@@ -16,11 +17,13 @@
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/main.css">
     <script src="js/pre-loader.js"></script>
+    <script src="js/sesion.js"></script>
     <script src="js/scroll.js"></script>
     <script src="js/aside.js"></script>
     <script src="js/cookies.js"></script>
     <script src="js/buscador.js"></script>
     <script src="js/colapsar.js"></script>
+    
 
 </head>
 
@@ -33,16 +36,16 @@
     <div class="container">
         <!-- ASIDE -->
         <div class="contenedor-aside"></div>
-        <!-- NAV SUPERIOR -->       
+        <!-- NAV SUPERIOR -->
         <div class="col-m-12 contenedor_nav_cuenta">
             <nav class="cuenta">
                 <!-- ICONOS DE BURGUER Y BÚSQUEDA -->
-                <div id="contenedor-iconSearch"><img  id="icon-search" src="img/lupa.svg" alt="buscar"></div>
+                <div id="contenedor-iconSearch"><img id="icon-search" src="img/lupa.svg" alt="buscar"></div>
                 <div id="burguer"><img src="img/burguer.png" alt="menu"></div>
                 <!-- ENLACES NAV SUPERIOR -->
                 <div class="content_ul">
                     <ul class="cuenta-ul">
-                        <li><a href="nav/micuenta.html">Mi Cuenta</a></li>
+                        <li><a id="micuenta" href="nav/micuenta.html">Mi Cuenta</a></li>
                         <li><a href="nav/carrito.html">Carrito</a></li>
                         <li><a href="nav/tienda.html">Tienda</a></li>
                         <li><a href="nav/contacto.html">Contacto</a></li>
@@ -51,10 +54,10 @@
                 </div>
             </nav>
             <div class="fondo_nav_superior"></div>
-            
+
         </div>
         <div class="expandir"><img src="img/flecha_abajo.svg" alt="expandir"></div>
-        
+
         <!-- Código de cookies -->
         <div class="cookiesms" id="cookie1">
             Este sitio web usa cookies, puedes ver <a href="nav/cookies.html">la política de cookies, aquí</a> -
@@ -78,26 +81,28 @@
         <div class="col-m-12 contenedor_nav">
             <div id="colapsar"><img src="img/flecha_abajo.svg" alt="expandir"></div>
             <nav class="navbar col-m-8">
-                
+
                 <div id="menu_principal">
-                   
+
 
                     <!-- COMPONENTES DEL NAVBAR -->
                     <ul class="navbar-ul">
 
-                        <li><a href="index.html" id="logo"><img src="img/logo-mini.png" alt="logo"></a></li>
+                        <li>
+                            <a href="index.html" id="logo"><img src="img/logo-mini.png" alt="logo"></a>
+                        </li>
                         <!--  Amigurumis  -->
-                        <li id="amigurumi" class="dropdown"><a href="nav/amigurumis.html">Amigurumis</a>
+                        <li id="amigurumi" class="dropdown"><a class="nivel1" href="nav/amigurumis.html">Amigurumis</a>
                             <ul class="amigurumis dropdown-content">
-                                <li><a href="nav/amigurumis/animales.html">Animales</a></li>
-                                <li><a href="nav/amigurumis/personajes.html">Personajes</a></li>
-                                <li><a href="nav/amigurumis/para-bebes.html">Para bebés</a></li>
+                                <li><a class="nivel2" href="nav/amigurumis/animales.html">Animales</a></li>
+                                <li><a class="nivel2" href="nav/amigurumis/personajes.html">Personajes</a></li>
+                                <li><a class="nivel2" href="nav/amigurumis/para-bebes.html">Para bebés</a></li>
                             </ul>
 
                         </li>
 
                         <!-- Moda -->
-                        <li id="menu_moda" class="dropdown"><a href="nav/moda.html">Moda</a>
+                        <li id="menu_moda" class="dropdown"><a class="nivel1" href="nav/moda.html">Moda</a>
                             <ul class="moda dropdown-content">
                                 <li><a href="nav/moda/hombre.html">Hombre</a></li>
                                 <li><a href="nav/moda/mujer.html">Mujer</a></li>
@@ -108,7 +113,7 @@
                         </li>
 
                         <!-- Complementos -->
-                        <li id="menu_comp" class="dropdown"><a href="nav/complementos.html">Complementos</a>
+                        <li id="menu_comp" class="dropdown"><a class="nivel1" href="nav/complementos.html">Complementos</a>
                             <ul class="complementos dropdown-content">
                                 <li><a href="nav/complementos/buf-chal.html">Bufandas/Chales</a></li>
                                 <li><a href="nav/complementos/bolsos-mochi.html">Bolsos/Mochilas</a></li>
@@ -118,7 +123,7 @@
                         </li>
 
                         <!--  Tutoriales  -->
-                        <li id="menu_tuto" class="dropdown"><a href="nav/tutoriales.html">Tutoriales</a>
+                        <li id="menu_tuto" class="dropdown"><a class="nivel1" href="nav/tutoriales.html">Tutoriales</a>
                             <ul class="tutoriales dropdown-content">
                                 <li><a href="nav/tutoriales/simbolos.html">Símbolos</a></li>
                                 <li><a href="nav/tutoriales/puntos-basicos.html">Puntos básicos</a></li>
@@ -126,7 +131,7 @@
                             </ul>
                         </li>
                         <li><a href="nav/blog.html">Blog</a></li>
-                        <li><a href="nav/foro.html">Foro</a></li>
+
 
 
 
@@ -136,18 +141,16 @@
                 </div>
             </nav>
             <div class="fondo_nav_principal"></div>
-        </div> <!-- Fin del navbar -->
+        </div>
+        <!-- Fin del navbar -->
 
         <!-- CONTENIDO PRINCIPAL -->
         <main class="col-m-12">
             <section class="col-m-8">
                 <h2>Tutoriales de Ganchillo, Punto, y más… Crea y Disfruta!</h2> <br>
 
-                <p class="parrafo">Si te gusta crear con lanas e hilos y quieres aprenderlo todo sobre el Crochet o
-                    Ganchillo, Punto,
-                    Punto Tunecino, Bordado y Punto de Cruz, estás en el sitio perfecto. En Patronarte te enseñaré todo
-                    lo que necesitas para dar rienda suelta a tu imaginación. Tutoriales sobre técnicas y puntos con
-                    vídeos paso a paso. Y patrones totalmente gratuitos.</p>
+                <p class="parrafo">Si te gusta crear con lanas e hilos y quieres aprenderlo todo sobre el Crochet o Ganchillo, Punto, Punto Tunecino, Bordado y Punto de Cruz, estás en el sitio perfecto. En Patronarte te enseñaré todo lo que necesitas para dar rienda suelta
+                    a tu imaginación. Tutoriales sobre técnicas y puntos con vídeos paso a paso. Y patrones totalmente gratuitos.</p>
 
                 <h2 style="text-align: center;">Amigurumis</h2>
 
@@ -239,13 +242,13 @@
                 </div>
 
                 <div class="separador">
-                    <h2 style="text-align: center;">Foro de ayuda</h2>
+                    <h2 style="text-align: center;">Consulta tus dudas</h2>
                 </div>
 
 
                 <div class="col-m-12 imagen13" id="imagen13">
                     <div class="content-leer2">
-                        <a href="nav/foro.html" class="leer-mas">Leer más</a>
+                        <a href="nav/contacto.html" class="leer-mas">Leer más</a>
                     </div>
                 </div>
 
@@ -264,14 +267,14 @@
 
                 <div class="col-m-4 social">
                     <ul>
-                        <li><a href="www.facebook.com"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="www.youtube.com"><i class="fa fa-youtube-play"></i></a></li>
-                        <li><a href="www.instagram.com"><i class="fa fa-instagram"></i></a></li>
-                        <li><a href="www.twitter.com"><i class="fa fa-twitter"></i></a></li>
+                        <li><a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                        <li><a href="https://www.youtube.com" target="_blank"><i class="fa fa-youtube-play"></i></a></li>
+                        <li><a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                        <li><a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter"></i></a></li>
                     </ul>
 
                 </div>
-                <div class="col-m-4">  </div>
+                <div class="col-m-4"> </div>
                 <div class="col-m-4 privacidad">
                     <button id="priv"><a href="../IFCD0110-21-Violeta/nav/privacidad.html">Política de
                             privacidad</a></button>

@@ -1,22 +1,20 @@
 <?php
 
+$nombre = $_POST['nombre'];
+$email = $_POST['email'];
+$mensaje = $_POST['mensaje'];
+
 //Import PHPMailer classes into the global namespace
 //These must be at the top of your script, not inside a function
 use PHPMailer\PHPMailer\PHPMailer;
 use PHPMailer\PHPMailer\SMTP;
 use PHPMailer\PHPMailer\Exception;
-
 //Load Composer's autoloader
 require '../vendor/autoload.php';
-
 //Create an instance; passing `true` enables exceptions
 $mail = new PHPMailer(true);
 
-$nombre = $_POST['nombre'];
-$email = $_POST['email'];
-$mensaje = $_POST['mensaje'];
-
-$body = "Nombre: " . $nombre . "\n\n" . "Email: " . $email . "\n\n" . "Mensaje: " . $mensaje;
+$body = "<h4>Nombre: " . $nombre . "</h4>" . "<h4>Email: " . $email . "</h4>" . "<h4>Mensaje: " . $mensaje . "</h4>";
 
 try {
   $mail = new PHPMailer;
@@ -30,8 +28,8 @@ try {
   $mail->SMTPAuth = true;
   $mail->Username = 'cifovioletaweb2122';
   $mail->Password = 'cifovioletaweb';
-  $mail->setFrom('cifovioletaweb2122', 'Formulario de contacto');
-  $mail->addAddress('cifovioletaweb2122@gmail.com');
+  $mail->setFrom('raquelvalleinformatica', 'Formulario de contacto');
+  $mail->addAddress('raquelvalleinformatica@gmail.com');
   $mail->Subject = 'Formulario de contacto';
   $mail->MsgHTML($body);
   $mail->send();
@@ -39,7 +37,5 @@ try {
 } catch (Exception $e) {
   echo "Ha ocurrido un error al enviar el mensaje. Mailer Error: {$mail->ErrorInfo}";
 }
-
-
 
 

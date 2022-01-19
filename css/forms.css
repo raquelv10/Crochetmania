@@ -1,0 +1,34 @@
+form {
+    background-color: aquamarine;
+    padding: 20px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 5px;
+    margin: 5px 0;
+    font-family: 'IBM Plex Mono', monospace;
+  }
+  
+  textarea {
+    resize: none;
+    width: 100%;
+    padding: 5px;
+    height: 100px;
+    font-family: 'IBM Plex Mono', monospace;
+    font-size: 14px;
+  }
+  
+  button {
+    width: 100%;
+    margin-top: 5px;
+    background-color: #fff;
+    border: 0;
+    padding: 5px;
+    font-family: 'IBM Plex Mono', monospace;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    border: 1px solid #333;
+  }

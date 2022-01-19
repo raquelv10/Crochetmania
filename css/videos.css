@@ -1,12 +1,11 @@
 .contenedor_videos {
-
-    display:flex;
+    display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
 }
 
-img {
+.foto {
     width: 50%;
     height: auto;
 }
@@ -16,8 +15,9 @@ iframe {
     height: 350px;
 }
 
-img, iframe {
-    margin:40px;
+.foto,
+iframe {
+    margin: 40px;
 }
 
 h4 {
@@ -25,24 +25,23 @@ h4 {
     font-weight: 400;
     text-align: center;
 }
+
 h3 {
     font-weight: 200!important;
 }
 
-#logo img{
-    margin:2px;
+#logo img {
+    margin: 2px;
 }
 
 .fila {
-    display:flex;
+    display: flex;
     justify-content: space-around;
-
 }
-.flex_videos{
 
-    display:flex;
+.flex_videos {
+    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
 }
