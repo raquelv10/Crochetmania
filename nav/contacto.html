@@ -17,7 +17,6 @@
     <link rel="stylesheet" href="../css/main.css">
     <script src="../js/pre-loader.js"></script>
     <script src="../js/sesion2.js"></script>
-    <script src="../js/slide.js"></script>
     <script src="../js/scroll.js"></script>
     <script src="../js/aside2.js"></script>
     <script src="../js/buscador.js"></script>
@@ -131,7 +130,7 @@
                             </ul>
                         </li>
                         <li><a href="../nav/blog.html">Blog</a></li>
-                        
+
 
                     </ul>
                 </div>
@@ -152,8 +151,8 @@
                 <div class="contacto col-m-12">
 
                     <div class="col-m-8 content-form">
-                        
-                        <form method="post" action="../php/contact.php" class="formulario">
+
+                        <form method="post" action="../php/contact.php" class="formulario" autocomplete="off" novalidate>
                             <input type="text" placeholder="Nombre" name="nombre">
                             <input type="email" placeholder="Email" name="email">
                             <textarea placeholder="Mensaje" name="mensaje"></textarea>
@@ -162,8 +161,12 @@
 
                     </div>
                 </div>
-                <p>*Al enviar aceptas la política de privacidad. Los datos que proporciones al enviar este formulario, serán tratados conforme la normativa vigente de Protección de Datos y gestionados en un fichero privado por Raquel Valle Natal, propietaria
-                    del fichero. La finalidad de la recogida de los datos, es para responder únicamente y exclusivamente a tu comentario. En ningún caso tus datos serán cedidos a terceras personas. Consulta más información en nuestra <a href="../nav/privacidad.html">Política de privacidad</a></p>
+                <p>*Al enviar aceptas la política de privacidad. Los datos que proporciones al enviar este formulario,
+                    serán tratados conforme la normativa vigente de Protección de Datos y gestionados en un fichero
+                    privado por Raquel Valle Natal, propietaria
+                    del fichero. La finalidad de la recogida de los datos, es para responder únicamente y exclusivamente
+                    a tu comentario. En ningún caso tus datos serán cedidos a terceras personas. Consulta más
+                    información en nuestra <a href="../nav/privacidad.html">Política de privacidad</a></p>
             </section>
 
         </main>
@@ -175,7 +178,8 @@
                 <div class="col-m-4 social">
                     <ul>
                         <li><a href="https://www.facebook.com" target="_blank"><i class="fa fa-facebook"></i></a></li>
-                        <li><a href="https://www.youtube.com" target="_blank"><i class="fa fa-youtube-play"></i></a></li>
+                        <li><a href="https://www.youtube.com" target="_blank"><i class="fa fa-youtube-play"></i></a>
+                        </li>
                         <li><a href="https://www.instagram.com" target="_blank"><i class="fa fa-instagram"></i></a></li>
                         <li><a href="https://www.twitter.com" target="_blank"><i class="fa fa-twitter"></i></a></li>
                     </ul>
@@ -196,6 +200,7 @@
         <!-- ICONO SCROLL -->
         <div class="scroll"><img src="../img/scroll.svg" alt="scroll"></div>
     </div>
+    <script type="module" src="../js/contact.js"></script>
 </body>
 
 </html>
