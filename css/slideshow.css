@@ -44,6 +44,23 @@
     100% {
         top:0;
         left:100%;
-        opacity: 1;
+        opacity: 1
+    }
+}
+
+@media only screen and (max-width: 1200px) {
+    .slide-container, .slider {
+        height: 350px!important;
+    }
+}
+@media only screen and (max-width: 768px) {
+    .slide-container, .slider {
+        height: 200px!important;
+    }
+}
+@media only screen and (max-width: 992px) {
+    .slide-container,
+    .slider {
+        height: 250px!important;
     }
 }
